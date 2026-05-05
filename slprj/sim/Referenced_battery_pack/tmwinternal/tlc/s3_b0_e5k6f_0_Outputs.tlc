@@ -1,0 +1,441 @@
+%implements s3_b0_e5k6f_0_Outputs "C"
+
+%function OutputsForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%<SLibCGIRAccessLocalDWork(15, 0)> %% ij4znfngsg
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+NeParameterBundle expl_temp;
+NeuDiagnosticManager *diag;
+NeuDiagnosticManager *diagnosticManager;
+NeuDiagnosticTree *diagTree;
+PmRealVector inputs;
+PmRealVector outputs;
+PmRealVector states;
+const Simulator *simulator;
+char *msg;
+char *msg_e;
+char *msg_p;
+real_T tmp[275];
+real_T m122fsxtmw[2];
+real_T jngj40oq5i_p;
+boolean_T first_output;
+boolean_T ok;
+%closefile localVarDecl
+%assign tlcOutputsFcnOfS2B1 = OpaqueTLCBlockFcn("Outputs", 2, 1, 0, 4, 0)
+if (%<(SLibCGIRIsSampleHit(0, 2))>) {
+    if (localDW->nj0szhqyl1) {
+        localDW->nj0szhqyl1 = false;
+        localB->fv1gn2eswu[0] = dz0xp1haaz.P_2;
+    } else {
+        localB->fv1gn2eswu[0] = localDW->oalsufthax;
+    }
+    localB->fv1gn2eswu[1] = 0.0;
+    localB->fv1gn2eswu[2] = 0.0;
+    localDW->bj2kfl3m3t[0] = !(localB->fv1gn2eswu[0] == localDW->bj2kfl3m3t[1]);
+    localDW->bj2kfl3m3t[1] = localB->fv1gn2eswu[0];
+    localB->fv1gn2eswu[0] = localDW->bj2kfl3m3t[1];
+    localB->fv1gn2eswu[3] = localDW->bj2kfl3m3t[0];
+    if (localDW->pe0h1wdvl5) {
+        tmp[0] = dz0xp1haaz.P_60;
+        tmp[1] = dz0xp1haaz.P_61;
+        tmp[2] = dz0xp1haaz.P_115;
+        tmp[3] = dz0xp1haaz.P_5;
+        tmp[4] = dz0xp1haaz.P_116;
+        tmp[5] = dz0xp1haaz.P_6;
+        tmp[6] = dz0xp1haaz.P_62;
+        tmp[7] = dz0xp1haaz.P_63;
+        tmp[8] = dz0xp1haaz.P_64;
+        tmp[9] = dz0xp1haaz.P_117;
+        tmp[10] = dz0xp1haaz.P_118;
+        tmp[11] = dz0xp1haaz.P_7;
+        tmp[12] = dz0xp1haaz.P_119;
+        tmp[13] = dz0xp1haaz.P_8;
+        tmp[14] = dz0xp1haaz.P_9;
+        tmp[15] = dz0xp1haaz.P_120;
+        tmp[16] = dz0xp1haaz.P_65;
+        tmp[17] = dz0xp1haaz.P_121;
+        tmp[18] = dz0xp1haaz.P_10;
+        tmp[19] = dz0xp1haaz.P_11;
+        tmp[20] = dz0xp1haaz.P_122;
+        tmp[21] = dz0xp1haaz.P_12;
+        tmp[22] = dz0xp1haaz.P_123;
+        tmp[23] = dz0xp1haaz.P_124;
+        tmp[24] = dz0xp1haaz.P_66;
+        tmp[25] = dz0xp1haaz.P_125;
+        tmp[26] = dz0xp1haaz.P_13;
+        tmp[27] = dz0xp1haaz.P_126;
+        tmp[28] = dz0xp1haaz.P_67;
+        tmp[29] = dz0xp1haaz.P_68;
+        tmp[30] = dz0xp1haaz.P_170;
+        tmp[31] = dz0xp1haaz.P_69;
+        tmp[32] = dz0xp1haaz.P_70;
+        tmp[33] = dz0xp1haaz.P_171;
+        tmp[34] = dz0xp1haaz.P_71;
+        tmp[35] = dz0xp1haaz.P_14;
+        tmp[36] = dz0xp1haaz.P_15;
+        tmp[37] = dz0xp1haaz.P_72;
+        tmp[38] = dz0xp1haaz.P_73;
+        tmp[39] = dz0xp1haaz.P_74;
+        tmp[40] = dz0xp1haaz.P_16;
+        tmp[41] = dz0xp1haaz.P_17;
+        tmp[42] = dz0xp1haaz.P_172;
+        tmp[43] = dz0xp1haaz.P_173;
+        tmp[44] = dz0xp1haaz.P_18;
+        tmp[45] = dz0xp1haaz.P_19;
+        tmp[46] = dz0xp1haaz.P_20;
+        tmp[47] = dz0xp1haaz.P_174;
+        tmp[48] = dz0xp1haaz.P_225;
+        tmp[49] = dz0xp1haaz.P_226;
+        tmp[50] = dz0xp1haaz.P_175;
+        tmp[51] = dz0xp1haaz.P_227;
+        tmp[52] = dz0xp1haaz.P_176;
+        tmp[53] = dz0xp1haaz.P_177;
+        tmp[54] = dz0xp1haaz.P_228;
+        tmp[55] = dz0xp1haaz.P_229;
+        tmp[56] = dz0xp1haaz.P_178;
+        tmp[57] = dz0xp1haaz.P_179;
+        tmp[58] = dz0xp1haaz.P_230;
+        tmp[59] = dz0xp1haaz.P_180;
+        tmp[60] = dz0xp1haaz.P_231;
+        tmp[61] = dz0xp1haaz.P_232;
+        tmp[62] = dz0xp1haaz.P_181;
+        tmp[63] = dz0xp1haaz.P_233;
+        tmp[64] = dz0xp1haaz.P_234;
+        tmp[65] = dz0xp1haaz.P_235;
+        tmp[66] = dz0xp1haaz.P_236;
+        tmp[67] = dz0xp1haaz.P_182;
+        tmp[68] = dz0xp1haaz.P_183;
+        tmp[69] = dz0xp1haaz.P_237;
+        tmp[70] = dz0xp1haaz.P_184;
+        tmp[71] = dz0xp1haaz.P_238;
+        tmp[72] = dz0xp1haaz.P_239;
+        tmp[73] = dz0xp1haaz.P_185;
+        tmp[74] = dz0xp1haaz.P_186;
+        tmp[75] = dz0xp1haaz.P_240;
+        tmp[76] = dz0xp1haaz.P_241;
+        tmp[77] = dz0xp1haaz.P_242;
+        tmp[78] = dz0xp1haaz.P_187;
+        tmp[79] = dz0xp1haaz.P_188;
+        tmp[80] = dz0xp1haaz.P_243;
+        tmp[81] = dz0xp1haaz.P_244;
+        tmp[82] = dz0xp1haaz.P_245;
+        tmp[83] = dz0xp1haaz.P_246;
+        tmp[84] = dz0xp1haaz.P_21;
+        tmp[85] = dz0xp1haaz.P_22;
+        tmp[86] = dz0xp1haaz.P_127;
+        tmp[87] = dz0xp1haaz.P_23;
+        tmp[88] = dz0xp1haaz.P_75;
+        tmp[89] = dz0xp1haaz.P_76;
+        tmp[90] = dz0xp1haaz.P_77;
+        tmp[91] = dz0xp1haaz.P_128;
+        tmp[92] = dz0xp1haaz.P_24;
+        tmp[93] = dz0xp1haaz.P_129;
+        tmp[94] = dz0xp1haaz.P_25;
+        tmp[95] = dz0xp1haaz.P_130;
+        tmp[96] = dz0xp1haaz.P_26;
+        tmp[97] = dz0xp1haaz.P_131;
+        tmp[98] = dz0xp1haaz.P_132;
+        tmp[99] = dz0xp1haaz.P_27;
+        tmp[100] = dz0xp1haaz.P_28;
+        tmp[101] = dz0xp1haaz.P_133;
+        tmp[102] = dz0xp1haaz.P_134;
+        tmp[103] = dz0xp1haaz.P_29;
+        tmp[104] = dz0xp1haaz.P_78;
+        tmp[105] = dz0xp1haaz.P_79;
+        tmp[106] = dz0xp1haaz.P_135;
+        tmp[107] = dz0xp1haaz.P_30;
+        tmp[108] = dz0xp1haaz.P_136;
+        tmp[109] = dz0xp1haaz.P_31;
+        tmp[110] = dz0xp1haaz.P_137;
+        tmp[111] = dz0xp1haaz.P_80;
+        tmp[112] = dz0xp1haaz.P_81;
+        tmp[113] = dz0xp1haaz.P_82;
+        tmp[114] = dz0xp1haaz.P_83;
+        tmp[115] = dz0xp1haaz.P_32;
+        tmp[116] = dz0xp1haaz.P_189;
+        tmp[117] = dz0xp1haaz.P_33;
+        tmp[118] = dz0xp1haaz.P_34;
+        tmp[119] = dz0xp1haaz.P_190;
+        tmp[120] = dz0xp1haaz.P_84;
+        tmp[121] = dz0xp1haaz.P_35;
+        tmp[122] = dz0xp1haaz.P_85;
+        tmp[123] = dz0xp1haaz.P_36;
+        tmp[124] = dz0xp1haaz.P_86;
+        tmp[125] = dz0xp1haaz.P_87;
+        tmp[126] = dz0xp1haaz.P_37;
+        tmp[127] = dz0xp1haaz.P_88;
+        tmp[128] = dz0xp1haaz.P_191;
+        tmp[129] = dz0xp1haaz.P_192;
+        tmp[130] = dz0xp1haaz.P_89;
+        tmp[131] = dz0xp1haaz.P_90;
+        tmp[132] = dz0xp1haaz.P_193;
+        tmp[133] = dz0xp1haaz.P_91;
+        tmp[134] = dz0xp1haaz.P_138;
+        tmp[135] = dz0xp1haaz.P_92;
+        tmp[136] = dz0xp1haaz.P_93;
+        tmp[137] = dz0xp1haaz.P_139;
+        tmp[138] = dz0xp1haaz.P_94;
+        tmp[139] = dz0xp1haaz.P_140;
+        tmp[140] = dz0xp1haaz.P_194;
+        tmp[141] = dz0xp1haaz.P_141;
+        tmp[142] = dz0xp1haaz.P_142;
+        tmp[143] = dz0xp1haaz.P_195;
+        tmp[144] = dz0xp1haaz.P_143;
+        tmp[145] = dz0xp1haaz.P_38;
+        tmp[146] = dz0xp1haaz.P_95;
+        tmp[147] = dz0xp1haaz.P_96;
+        tmp[148] = dz0xp1haaz.P_97;
+        tmp[149] = dz0xp1haaz.P_98;
+        tmp[150] = dz0xp1haaz.P_144;
+        tmp[151] = dz0xp1haaz.P_39;
+        tmp[152] = dz0xp1haaz.P_145;
+        tmp[153] = dz0xp1haaz.P_40;
+        tmp[154] = dz0xp1haaz.P_41;
+        tmp[155] = dz0xp1haaz.P_146;
+        tmp[156] = dz0xp1haaz.P_147;
+        tmp[157] = dz0xp1haaz.P_148;
+        tmp[158] = dz0xp1haaz.P_42;
+        tmp[159] = dz0xp1haaz.P_43;
+        tmp[160] = dz0xp1haaz.P_149;
+        tmp[161] = dz0xp1haaz.P_150;
+        tmp[162] = dz0xp1haaz.P_151;
+        tmp[163] = dz0xp1haaz.P_44;
+        tmp[164] = dz0xp1haaz.P_45;
+        tmp[165] = dz0xp1haaz.P_196;
+        tmp[166] = dz0xp1haaz.P_46;
+        tmp[167] = dz0xp1haaz.P_152;
+        tmp[168] = dz0xp1haaz.P_99;
+        tmp[169] = dz0xp1haaz.P_100;
+        tmp[170] = dz0xp1haaz.P_101;
+        tmp[171] = dz0xp1haaz.P_102;
+        tmp[172] = dz0xp1haaz.P_47;
+        tmp[173] = dz0xp1haaz.P_153;
+        tmp[174] = dz0xp1haaz.P_197;
+        tmp[175] = dz0xp1haaz.P_247;
+        tmp[176] = dz0xp1haaz.P_198;
+        tmp[177] = dz0xp1haaz.P_199;
+        tmp[178] = dz0xp1haaz.P_248;
+        tmp[179] = dz0xp1haaz.P_200;
+        tmp[180] = dz0xp1haaz.P_249;
+        tmp[181] = dz0xp1haaz.P_250;
+        tmp[182] = dz0xp1haaz.P_251;
+        tmp[183] = dz0xp1haaz.P_252;
+        tmp[184] = dz0xp1haaz.P_253;
+        tmp[185] = dz0xp1haaz.P_254;
+        tmp[186] = dz0xp1haaz.P_255;
+        tmp[187] = dz0xp1haaz.P_201;
+        tmp[188] = dz0xp1haaz.P_202;
+        tmp[189] = dz0xp1haaz.P_256;
+        tmp[190] = dz0xp1haaz.P_203;
+        tmp[191] = dz0xp1haaz.P_257;
+        tmp[192] = dz0xp1haaz.P_258;
+        tmp[193] = dz0xp1haaz.P_204;
+        tmp[194] = dz0xp1haaz.P_205;
+        tmp[195] = dz0xp1haaz.P_259;
+        tmp[196] = dz0xp1haaz.P_260;
+        tmp[197] = dz0xp1haaz.P_206;
+        tmp[198] = dz0xp1haaz.P_261;
+        tmp[199] = dz0xp1haaz.P_262;
+        tmp[200] = dz0xp1haaz.P_207;
+        tmp[201] = dz0xp1haaz.P_263;
+        tmp[202] = dz0xp1haaz.P_48;
+        tmp[203] = dz0xp1haaz.P_49;
+        tmp[204] = dz0xp1haaz.P_264;
+        tmp[205] = dz0xp1haaz.P_265;
+        tmp[206] = dz0xp1haaz.P_266;
+        tmp[207] = dz0xp1haaz.P_267;
+        tmp[208] = dz0xp1haaz.P_268;
+        tmp[209] = dz0xp1haaz.P_269;
+        tmp[210] = dz0xp1haaz.P_208;
+        tmp[211] = dz0xp1haaz.P_209;
+        tmp[212] = dz0xp1haaz.P_270;
+        tmp[213] = dz0xp1haaz.P_271;
+        tmp[214] = dz0xp1haaz.P_210;
+        tmp[215] = dz0xp1haaz.P_211;
+        tmp[216] = dz0xp1haaz.P_272;
+        tmp[217] = dz0xp1haaz.P_273;
+        tmp[218] = dz0xp1haaz.P_212;
+        tmp[219] = dz0xp1haaz.P_274;
+        tmp[220] = dz0xp1haaz.P_275;
+        tmp[221] = dz0xp1haaz.P_213;
+        tmp[222] = dz0xp1haaz.P_214;
+        tmp[223] = dz0xp1haaz.P_276;
+        tmp[224] = dz0xp1haaz.P_277;
+        tmp[225] = dz0xp1haaz.P_215;
+        tmp[226] = dz0xp1haaz.P_216;
+        tmp[227] = dz0xp1haaz.P_217;
+        tmp[228] = dz0xp1haaz.P_278;
+        tmp[229] = dz0xp1haaz.P_279;
+        tmp[230] = dz0xp1haaz.P_218;
+        tmp[231] = dz0xp1haaz.P_154;
+        tmp[232] = dz0xp1haaz.P_219;
+        tmp[233] = dz0xp1haaz.P_220;
+        tmp[234] = dz0xp1haaz.P_155;
+        tmp[235] = dz0xp1haaz.P_103;
+        tmp[236] = dz0xp1haaz.P_104;
+        tmp[237] = dz0xp1haaz.P_156;
+        tmp[238] = dz0xp1haaz.P_105;
+        tmp[239] = dz0xp1haaz.P_157;
+        tmp[240] = dz0xp1haaz.P_158;
+        tmp[241] = dz0xp1haaz.P_106;
+        tmp[242] = dz0xp1haaz.P_221;
+        tmp[243] = dz0xp1haaz.P_107;
+        tmp[244] = dz0xp1haaz.P_222;
+        tmp[245] = dz0xp1haaz.P_108;
+        tmp[246] = dz0xp1haaz.P_159;
+        tmp[247] = dz0xp1haaz.P_50;
+        tmp[248] = dz0xp1haaz.P_223;
+        tmp[249] = dz0xp1haaz.P_224;
+        tmp[250] = dz0xp1haaz.P_160;
+        tmp[251] = dz0xp1haaz.P_51;
+        tmp[252] = dz0xp1haaz.P_109;
+        tmp[253] = dz0xp1haaz.P_110;
+        tmp[254] = dz0xp1haaz.P_52;
+        tmp[255] = dz0xp1haaz.P_161;
+        tmp[256] = dz0xp1haaz.P_53;
+        tmp[257] = dz0xp1haaz.P_162;
+        tmp[258] = dz0xp1haaz.P_54;
+        tmp[259] = dz0xp1haaz.P_163;
+        tmp[260] = dz0xp1haaz.P_164;
+        tmp[261] = dz0xp1haaz.P_55;
+        tmp[262] = dz0xp1haaz.P_165;
+        tmp[263] = dz0xp1haaz.P_56;
+        tmp[264] = dz0xp1haaz.P_166;
+        tmp[265] = dz0xp1haaz.P_167;
+        tmp[266] = dz0xp1haaz.P_57;
+        tmp[267] = dz0xp1haaz.P_111;
+        tmp[268] = dz0xp1haaz.P_112;
+        tmp[269] = dz0xp1haaz.P_58;
+        tmp[270] = dz0xp1haaz.P_168;
+        tmp[271] = dz0xp1haaz.P_59;
+        tmp[272] = dz0xp1haaz.P_169;
+        tmp[273] = dz0xp1haaz.P_113;
+        tmp[274] = dz0xp1haaz.P_114;
+        diag = rtw_create_diagnostics();
+        diagTree = neu_diagnostic_manager_get_initial_tree(diag);
+        expl_temp.mRealParameters.mN = 275;
+        expl_temp.mRealParameters.mX = &tmp[0];
+        expl_temp.mLogicalParameters.mN = 0;
+        expl_temp.mLogicalParameters.mX = NULL;
+        expl_temp.mIntegerParameters.mN = 0;
+        expl_temp.mIntegerParameters.mX = NULL;
+        expl_temp.mIndexParameters.mN = 0;
+        expl_temp.mIndexParameters.mX = NULL;
+        ok = nesl_rtp_manager_set_rtps((NeslRtpManager *)localDW->f0g015sg4m, %<(LibGetT())>, expl_temp, diag);
+        if (!ok) {
+            ok = error_buffer_is_empty(%<(LibGetRTModelErrorStatus())>);
+            if (ok) {
+                msg = rtw_diagnostics_msg(diagTree);
+                %<(LibSetRTModelErrorStatus("msg"))>;
+            }
+        }
+    }
+    localDW->pe0h1wdvl5 = false;
+    simulator = (const Simulator *)localDW->j3m1xm3pfa;
+    diagnosticManager = (NeuDiagnosticManager *)localDW->ibu4hql23w;
+    inputs.mN = 1;
+    inputs.mX = &localDW->nfvf01sfd3;
+    localDW->nfvf01sfd3 = localB->fv1gn2eswu[0];
+    states.mN = 7003;
+    states.mX = &localDW->hsakgqju1f[0];
+    outputs.mN = 2;
+    outputs.mX = &m122fsxtmw[0];
+    first_output = false;
+    if (localDW->fz1mndibmx == 0.0) {
+        first_output = true;
+        localDW->fz1mndibmx = 1.0;
+    }
+    ok = partitioning_get_reinit(simulator);
+    ok = first_output | ok;
+    if (ok) {
+        first_output = partitioning_start(simulator, diagnosticManager);
+        if (first_output) {
+            first_output = error_buffer_is_empty(%<(LibGetRTModelErrorStatus())>);
+            if (first_output) {
+                msg_p = rtw_diagnostics_msg((const NeuDiagnosticTree *)localDW->ilpxsm4tru);
+                %<(LibSetRTModelErrorStatus("msg_p"))>;
+            }
+        }
+    }
+    ok = partitioning_solve(simulator, &inputs, &states, &outputs, %<(LibGetT())>, diagnosticManager, ok);
+    if (ok) {
+        ok = error_buffer_is_empty(%<(LibGetRTModelErrorStatus())>);
+        if (ok) {
+            msg_e = rtw_diagnostics_msg((const NeuDiagnosticTree *)localDW->ilpxsm4tru);
+            %<(LibSetRTModelErrorStatus("msg_e"))>;
+        }
+    }
+    ij4znfngsg = 0;
+    while (ij4znfngsg < 1) {
+%<SLibCGIRIteratorContainer(1, "&ij4znfngsg")>\
+        jngj40oq5i_p = m122fsxtmw[0];
+        localB->hnxo2peo4f[ij4znfngsg].igx52hms0a = 1.0 / (dz0xp1haaz.P_0 * 3600.0) * jngj40oq5i_p;
+        if (localDW->hnxo2peo4f[ij4znfngsg].ns5leiowvz != 0) {
+            localDW->hnxo2peo4f[ij4znfngsg].j4wwe4mokr = dz0xp1haaz.P_4;
+        }
+        *am2vbk50bo = localDW->hnxo2peo4f[ij4znfngsg].j4wwe4mokr;
+        ij4znfngsg++;
+    }
+%<tlcOutputsFcnOfS2B1>\
+    if (localDW->g524wi1wn0) {
+        localDW->g524wi1wn0 = false;
+        *j2k212mznn = dz0xp1haaz.P_3;
+    } else {
+        *j2k212mznn = m122fsxtmw[1];
+    }
+}
+%closefile cfgTxt
+%<cfgTxt>
+%assign rtmArgSys = ::CompiledModel.System[::CompiledModel.System[::CompiledModel.RTWCGModules.RTWCGModule[0].CGSystemIdx].NonInlinedParentSystemIdx]
+%if SysFcnArgNeeded("Output", rtmArgSys.Interface.RTMArgDef, rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Output"))
+%<SLibCG_AccessArg(0, 4, 0)>
+%endif
+%if SLibCG_ArgAccessed(0, 4, 0)
+%<SLibAccessArg(rtmArgSys.Interface.RTMArgDef, "Output", rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Output"))>
+%endif
+%if (IsModelReferenceBaseSys(rtmArgSys) && (IsModelRefScalableBuild() || GenerateClassInterface)) ||...
+(GenerateClassInterface && SLibIsMultiInstanceServer(rtmArgSys))
+%<SLibCG_UndoAccessArg(0, 4, 0)>
+%endif
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 1
+%assign ::GlobalCurrentTID = 1
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction
+%function OutputsFcnProtoTypeForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Referenced_battery_pack(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(0, 4, 0)
+%<comma>%<::tSimStructType> * const %<::tSimStruct>\
+%assign comma = ", "
+%<SLibUpdateSymbolForFunction("Referenced_battery_pack", SLibGetFcnDefinitionRTMSymbolName(), TLC_FALSE)>\
+%endif
+%<comma>real_T *am2vbk50bo\
+%assign comma = ", "
+%<comma>real_T *j2k212mznn\
+%assign comma = ", "
+%<comma>od0eeefmsi *localB\
+%assign comma = ", "
+%<comma>oruurd4lj0 *localDW\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 4, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 1
+%assign ::GlobalCurrentTID = 1
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction

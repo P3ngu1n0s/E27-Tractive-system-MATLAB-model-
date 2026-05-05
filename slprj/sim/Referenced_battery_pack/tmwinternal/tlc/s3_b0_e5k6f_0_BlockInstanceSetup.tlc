@@ -1,0 +1,29 @@
+%implements s3_b0_e5k6f_0_BlockInstanceSetup "C"
+
+%function BlockInstanceSetup(block, system) Output
+%% Subsystems with iterators in IR:
+%% TLC Block Registration buffer:
+%<LibAddToCommonIncludes("Referenced_battery_pack_785197ff_0_simulator.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_rtp.h")>
+%<LibAddToCommonIncludes("nesl_rtw_rtp.h")>
+%<LibAddToCommonIncludes("nesl_rtw_rtp.h")>
+%<LibAddToCommonIncludes("nesl_rtw_rtp.h")>
+%<LibAddToCommonIncludes("nesl_rtw_rtp.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("Referenced_battery_pack_785197ff_0_simulator.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("Referenced_battery_pack_785197ff_0_simulator.h")>
+%% END  Block Registration buffer
+%endfunction

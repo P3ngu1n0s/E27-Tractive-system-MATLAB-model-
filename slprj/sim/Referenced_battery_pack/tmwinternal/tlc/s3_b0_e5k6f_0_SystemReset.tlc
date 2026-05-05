@@ -1,0 +1,54 @@
+%implements s3_b0_e5k6f_0_SystemReset "C"
+
+%function SystemReset(block, system) Output
+%<SLibCGIRAccessLocalDWork(15, 0)> %% ij4znfngsg
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+boolean_T tmp;
+%closefile localVarDecl
+localDW->oalsufthax = dz0xp1haaz.P_1;
+for (ij4znfngsg = 0; ij4znfngsg < 1; ij4znfngsg++) {
+    localDW->hnxo2peo4f[ij4znfngsg].ns5leiowvz = 1U;
+    if (%<(LibIsFirstInitCond())>) {
+        tmp = %<(SLibCG_SE(SLibIsRapidAccelSimulating()))>;
+        if (tmp) {
+            tmp = %<(SLibCG_SE(RTMGetGlobalInitialStatesAvailable()))>;
+            localDW->hnxo2peo4f[ij4znfngsg].ns5leiowvz = (uint8_T)!tmp;
+        } else {
+            localDW->hnxo2peo4f[ij4znfngsg].ns5leiowvz = 1U;
+        }
+    }
+}
+%closefile cfgTxt
+%<cfgTxt>
+%assign rtmArgSys = ::CompiledModel.System[::CompiledModel.System[::CompiledModel.RTWCGModules.RTWCGModule[0].CGSystemIdx].NonInlinedParentSystemIdx]
+%if SysFcnArgNeeded("SystemReset", rtmArgSys.Interface.RTMArgDef, rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "SystemReset"))
+%<SLibCG_AccessArg(0, 3, 0)>
+%endif
+%if SLibCG_ArgAccessed(0, 3, 0)
+%<SLibAccessArg(rtmArgSys.Interface.RTMArgDef, "SystemReset", rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "SystemReset"))>
+%endif
+%if (IsModelReferenceBaseSys(rtmArgSys) && (IsModelRefScalableBuild() || GenerateClassInterface)) ||...
+(GenerateClassInterface && SLibIsMultiInstanceServer(rtmArgSys))
+%<SLibCG_UndoAccessArg(0, 3, 0)>
+%endif
+%<LibSetSystemField(system, "CachedSystemResetLocalVars", localVarDecl)>
+%endfunction
+%function SystemResetFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void cg355dq0z1(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(0, 3, 0)
+%<comma>%<::tSimStructType> * const %<::tSimStruct>\
+%assign comma = ", "
+%<SLibUpdateSymbolForFunction("cg355dq0z1", SLibGetFcnDefinitionRTMSymbolName(), TLC_FALSE)>\
+%endif
+%<comma>oruurd4lj0 *localDW\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 3, fcnProtoType)>
+%endfunction

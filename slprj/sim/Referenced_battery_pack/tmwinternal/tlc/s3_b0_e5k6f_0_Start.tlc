@@ -1,0 +1,66 @@
+%implements s3_b0_e5k6f_0_Start "C"
+
+%function Start(block, system) Output
+%<SLibCGIRAccessLocalDWork(15, 0)> %% ij4znfngsg
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+NeslRtpManager *manager;
+NeuDiagnosticManager *tmp;
+NeuDiagnosticTree *tmp_p;
+const Simulator *simulator;
+Simulator *tmp_e;
+%closefile localVarDecl
+for (ij4znfngsg = 0; ij4znfngsg < 1; ij4znfngsg++) {
+    localB->hnxo2peo4f[ij4znfngsg].igx52hms0a = 0.0;
+    localDW->hnxo2peo4f[ij4znfngsg].j4wwe4mokr = 0.0;
+}
+localDW->nj0szhqyl1 = true;
+simulator = Referenced_battery_pack_785197ff_0_simulator_create();
+manager = partitioning_rtp_manager_create(simulator);
+localDW->f0g015sg4m = (void *)manager;
+localDW->pe0h1wdvl5 = true;
+tmp = rtw_create_diagnostics();
+localDW->ibu4hql23w = (void *)tmp;
+tmp_p = neu_diagnostic_manager_get_initial_tree((NeuDiagnosticManager *)localDW->ibu4hql23w);
+localDW->ilpxsm4tru = (void *)tmp_p;
+tmp_e = Referenced_battery_pack_785197ff_0_simulator_create();
+localDW->j3m1xm3pfa = (void *)tmp_e;
+*j2k212mznn = dz0xp1haaz.P_3;
+localDW->g524wi1wn0 = true;
+%closefile cfgTxt
+%<cfgTxt>
+%assign rtmArgSys = ::CompiledModel.System[::CompiledModel.System[::CompiledModel.RTWCGModules.RTWCGModule[0].CGSystemIdx].NonInlinedParentSystemIdx]
+%if SysFcnArgNeeded("Start", rtmArgSys.Interface.RTMArgDef, rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Start"))
+%<SLibCG_AccessArg(0, 0, 0)>
+%endif
+%if SLibCG_ArgAccessed(0, 0, 0)
+%<SLibAccessArg(rtmArgSys.Interface.RTMArgDef, "Start", rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Start"))>
+%endif
+%if (IsModelReferenceBaseSys(rtmArgSys) && (IsModelRefScalableBuild() || GenerateClassInterface)) ||...
+(GenerateClassInterface && SLibIsMultiInstanceServer(rtmArgSys))
+%<SLibCG_UndoAccessArg(0, 0, 0)>
+%endif
+%<LibSetSystemField(system, "CachedStartLocalVars", localVarDecl)>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void cfw4m2n3fw(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(0, 0, 0)
+%<comma>%<::tSimStructType> * const %<::tSimStruct>\
+%assign comma = ", "
+%<SLibUpdateSymbolForFunction("cfw4m2n3fw", SLibGetFcnDefinitionRTMSymbolName(), TLC_FALSE)>\
+%endif
+%<comma>real_T *j2k212mznn\
+%assign comma = ", "
+%<comma>od0eeefmsi *localB\
+%assign comma = ", "
+%<comma>oruurd4lj0 *localDW\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 0, fcnProtoType)>
+%endfunction

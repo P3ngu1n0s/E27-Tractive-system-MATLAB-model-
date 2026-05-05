@@ -1,0 +1,26 @@
+%implements s3_b0_e5k6f_0_TLCInterface "C"
+
+%function getInputAddr_2_1_0_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCG_AccessArg(0 ,1, 1)>
+
+%return "am2vbk50bo"
+%endfunction
+
+%function getInput_2_1_0_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCG_AccessArg(0 ,1, 1)>
+
+%return "(*am2vbk50bo)"
+%endfunction
+
+%function getInputAddr_2_1_0_4_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCG_AccessArg(0 ,4, 1)>
+
+%return "am2vbk50bo"
+%endfunction
+
+%function getInput_2_1_0_4_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCG_AccessArg(0 ,4, 1)>
+
+%return "(*am2vbk50bo)"
+%endfunction
+

@@ -1,0 +1,27 @@
+#include "ne_ds.h"
+#include "Referenced_battery_pack_785197ff_0_initer_idae_ds_sys_struct.h"
+#include "Referenced_battery_pack_785197ff_0_initer_idae_ds_qu.h"
+#include "Referenced_battery_pack_785197ff_0_initer_idae_ds.h"
+#include "Referenced_battery_pack_785197ff_0_initer_idae_ds_externals.h"
+#include "Referenced_battery_pack_785197ff_0_initer_idae_ds_external_struct.h"
+#include "ssc_ml_fun.h"
+int32_T Referenced_battery_pack_785197ff_0_initer_idae_ds_qu ( const
+NeDynamicSystem * LC , const NeDynamicSystemInput * t1 , NeDsMethodOutput *
+out ) { static real_T _cg_const_1 [ 141 ] = { - 1.0 , - 1.0 , - 1.0 , - 1.0 ,
+- 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0
+, - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , -
+1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 ,
+- 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0
+, - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , -
+1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 ,
+- 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0
+, - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , -
+1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 ,
+- 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0
+, - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , -
+1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 ,
+- 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0
+, - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , - 1.0 , -
+1.0 , 1.0 } ; int32_T i ; ( void ) t1 ; ( void ) LC ; for ( i = 0 ; i < 141 ;
+i ++ ) { out -> mQU . mX [ i ] = _cg_const_1 [ i ] ; } ( void ) LC ; ( void )
+out ; return 0 ; }
