@@ -1,0 +1,106 @@
+%implements s17_b0_thnfh_Terminate "C"
+
+%function Terminate(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcTerminateFcnOfS17B29 = OpaqueTLCBlockFcn("Terminate", 17, 29, 0, 7, 0)
+%assign tlcTerminateFcnOfS17B86 = OpaqueTLCBlockFcn("Terminate", 17, 86, 0, 7, 1)
+%assign tlcCleanupRuntimeResourcesFcnOfS17B29 = OpaqueTLCBlockFcn("CleanupRuntimeResources", 17, 29, 0, 7, 2)
+%assign tlcCleanupRuntimeResourcesFcnOfS17B86 = OpaqueTLCBlockFcn("CleanupRuntimeResources", 17, 86, 0, 7, 3)
+                            {
+            {
+                void * excelLoader = (void *) rtDW.hplkvatikf.ExcelLoader;
+                if (excelLoader != (NULL)) {
+                    const char *errMsg = (NULL);
+                    errMsg = rtwExcelLoaderTerminate(excelLoader);
+                    if (errMsg != (NULL)) {
+                        %<(RTMSetErrStat("errMsg"))>;
+                        return;
+                    }
+                }
+            }
+    }
+
+                            {
+            {
+                void * excelLoader = (void *) rtDW.mbfomrke5h.ExcelLoader;
+                if (excelLoader != (NULL)) {
+                    const char *errMsg = (NULL);
+                    errMsg = rtwExcelLoaderTerminate(excelLoader);
+                    if (errMsg != (NULL)) {
+                        %<(RTMSetErrStat("errMsg"))>;
+                        return;
+                    }
+                }
+            }
+    }
+
+neu_destroy_diagnostic_manager((NeuDiagnosticManager *)rtDW.elqjayf431);
+Tractive_System_model_2f85d999_0_simulator_destroy();
+                            {
+            {
+                void * excelLoader = (void *) rtDW.oupgqriu4e.ExcelLoader;
+                if (excelLoader != (NULL)) {
+                    const char *errMsg = (NULL);
+                    errMsg = rtwExcelLoaderTerminate(excelLoader);
+                    if (errMsg != (NULL)) {
+                        %<(RTMSetErrStat("errMsg"))>;
+                        return;
+                    }
+                }
+            }
+    }
+
+if (!rtDW.n0efgff5hp.matlabCodegenIsDeleted) {
+    rtDW.n0efgff5hp.matlabCodegenIsDeleted = true;
+    if ((rtDW.n0efgff5hp.isInitialized == 1) && rtDW.n0efgff5hp.isSetupComplete) {
+        if (rtDW.n0efgff5hp.FilterObj->isInitialized == 1) {
+            rtDW.n0efgff5hp.FilterObj->isInitialized = 2;
+        }
+        rtDW.n0efgff5hp.NumChannels = -1;
+    }
+}
+                            {
+            {
+                void * excelLoader = (void *) rtDW.mqxteia35p.ExcelLoader;
+                if (excelLoader != (NULL)) {
+                    const char *errMsg = (NULL);
+                    errMsg = rtwExcelLoaderTerminate(excelLoader);
+                    if (errMsg != (NULL)) {
+                        %<(RTMSetErrStat("errMsg"))>;
+                        return;
+                    }
+                }
+            }
+    }
+
+%<tlcTerminateFcnOfS17B29>\
+                            {
+            {
+                void * excelLoader = (void *) rtDW.mbhkchhdjz.ExcelLoader;
+                if (excelLoader != (NULL)) {
+                    const char *errMsg = (NULL);
+                    errMsg = rtwExcelLoaderTerminate(excelLoader);
+                    if (errMsg != (NULL)) {
+                        %<(RTMSetErrStat("errMsg"))>;
+                        return;
+                    }
+                }
+            }
+    }
+
+%<tlcTerminateFcnOfS17B86>\
+%<tlcCleanupRuntimeResourcesFcnOfS17B29>\
+%<tlcCleanupRuntimeResourcesFcnOfS17B86>\
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function TerminateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Terminate(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 7, fcnProtoType)>
+%endfunction

@@ -1,0 +1,87 @@
+%implements s17_b0_thnfh_SystemInitialize "C"
+
+%function SystemInitialize(block, system) Output
+%<SLibCGIRAccessLocalDWork(75, 0)> %% oakqpinkq5
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+int32_T i;
+boolean_T tmp;
+%closefile localVarDecl
+%<SLibGetRootInportsFromFile(system, TLC_TRUE)>
+%<SLibInsertAsyncTaskInitializeCode(system)>
+%<SLibWriteMachineInitialize()>
+rtX.ie0vm1objg = rtP.Integrator_IC;
+rtDW.ehai3ckfo3 = rtB.fepjoc1mts;
+rtDW.gsfiakcjqc = 2;
+rtDW.cswqu4ghej[0] = rtP.RateTransition_InitialCondition;
+rtDW.cs0riggyvy[0] = rtP.RateTransition1_InitialCondition;
+rtDW.cswqu4ghej[1] = rtP.RateTransition_InitialCondition;
+rtDW.cs0riggyvy[1] = rtP.RateTransition1_InitialCondition;
+rtDW.cswqu4ghej[2] = rtP.RateTransition_InitialCondition;
+rtDW.cs0riggyvy[2] = rtP.RateTransition1_InitialCondition;
+rtDW.jhw3wgd2b0 = rtP.RateTransition_InitialCondition_ft4rz3puja;
+rtDW.dirb5tawjj = rtP.UnitDelay_InitialCondition;
+rtX.jb3myghg0e = rtP.Integrator_IC_a4ik0cph35;
+rtDW.gqluv13bkw = rtP.UnitDelay_InitialCondition_buwomimtwo;
+rtDW.aiuj3n14l2 = rtB.pad5qpr4zh;
+if (rtDW.aiuj3n14l2 > rtP.Integrator_UpperSat) {
+    rtDW.aiuj3n14l2 = rtP.Integrator_UpperSat;
+} else if (rtDW.aiuj3n14l2 < rtP.Integrator_LowerSat) {
+    rtDW.aiuj3n14l2 = rtP.Integrator_LowerSat;
+}
+rtDW.hhjcusw3kr = 2;
+rtDW.i0ctvtpqv4 = rtP.UnitDelay_InitialCondition_l4xism22n3;
+rtDW.dz5w1ldcfc = rtB.nyp0b3xr0p;
+if (rtDW.dz5w1ldcfc > rtP.Integrator_UpperSat_kl1hm1xihq) {
+    rtDW.dz5w1ldcfc = rtP.Integrator_UpperSat_kl1hm1xihq;
+} else if (rtDW.dz5w1ldcfc < rtP.Integrator_LowerSat_e0zgrt502b) {
+    rtDW.dz5w1ldcfc = rtP.Integrator_LowerSat_e0zgrt502b;
+}
+rtDW.bx3tm5qc5k = 2;
+rtDW.agggw4jnlr = rtP.UnitDelay_InitialCondition_fwgybhttfa;
+rtDW.ioz4i0cogy = rtB.j5tv3mr3kb;
+if (rtDW.ioz4i0cogy > rtP.Integrator_UpperSat_a5uo2vq1ve) {
+    rtDW.ioz4i0cogy = rtP.Integrator_UpperSat_a5uo2vq1ve;
+} else if (rtDW.ioz4i0cogy < rtP.Integrator_LowerSat_amsvttoka5) {
+    rtDW.ioz4i0cogy = rtP.Integrator_LowerSat_amsvttoka5;
+}
+rtDW.iy3tsoo445 = 2;
+rtDW.m1edngddpr[0] = rtP.RT3_InitialCondition;
+rtDW.m1edngddpr[1] = rtP.RT3_InitialCondition;
+rtDW.m1edngddpr[2] = rtP.RT3_InitialCondition;
+for (oakqpinkq5 = 0; oakqpinkq5 < 1; oakqpinkq5++) {
+    rtDW.nchejrqkqc[oakqpinkq5].og0pkawmy5 = 1U;
+    if (%<(LibIsFirstInitCond())>) {
+        tmp = %<(SLibCG_SE(SLibIsRapidAccelSimulating()))>;
+        if (tmp) {
+            tmp = %<(SLibCG_SE(RTMGetGlobalInitialStatesAvailable()))>;
+            rtDW.nchejrqkqc[oakqpinkq5].og0pkawmy5 = (uint8_T)!tmp;
+        } else {
+            rtDW.nchejrqkqc[oakqpinkq5].og0pkawmy5 = 1U;
+        }
+    }
+}
+rtX.bbxjatyveg = 0.0;
+rtDW.lcntey2ugc = pnnwvd4cbf;
+if ((rtDW.n0efgff5hp.isInitialized == 1) && (rtDW.n0efgff5hp.FilterObj->isInitialized == 1)) {
+    /* System object Initialization function: dsp.FIRFilter */
+    for (i = 0; i < 558; i++) {
+        rtDW.n0efgff5hp.FilterObj->cSFunObject.W0_states[i] = rtDW.n0efgff5hp.FilterObj->cSFunObject.P0_InitialStates;
+    }
+}
+%<SLibInsertInitPeriodicCStatesFcn(system)>
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedSystemInitializeLocalVars", localVarDecl)>
+%endfunction
+%function SystemInitializeFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void SystemInitialize(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 1, fcnProtoType)>
+%endfunction

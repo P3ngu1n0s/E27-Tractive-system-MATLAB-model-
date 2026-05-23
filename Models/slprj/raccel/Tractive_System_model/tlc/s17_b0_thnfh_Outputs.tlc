@@ -1,0 +1,1274 @@
+%implements s17_b0_thnfh_Outputs "C"
+
+%function OutputsForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%<SLibCGIRAccessLocalVar(5, 0, "")> %% j5u2fjehs4
+%<SLibCGIRAccessLocalVar(14, 0, "")> %% nl3etsxjop
+%<SLibCGIRAccessLocalDWork(75, 0)> %% oakqpinkq5
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+NeParameterBundle expl_temp;
+NeuDiagnosticManager *diag;
+NeuDiagnosticManager *diagnosticManager;
+NeuDiagnosticTree *diagTree;
+PmRealVector inputs;
+PmRealVector outputs;
+PmRealVector states;
+const Simulator *simulator;
+char *msg;
+char *msg_e;
+char *msg_p;
+jm4mdfzny3 *obj;
+real_T tmp[279];
+real_T fractions[3];
+real_T nleazrv5th[3];
+real_T Toffset;
+real_T afqdkvwkdg;
+real_T akmfgydsr1;
+real_T b0v2g4lngi;
+real_T casilp04mc;
+real_T d43xrwflyk;
+real_T dtb00zpiry;
+real_T dw0lxktmyz_idx_0;
+real_T dw0lxktmyz_idx_1;
+real_T ged32k4led;
+real_T ha2k10fcke;
+real_T itsm54usro;
+real_T lx3cfivdao;
+real_T nlcemu1suv;
+real_T p3bfahgcvs;
+real_T pbcdxwb11j;
+real_T pmfpu0atq5;
+int32_T i;
+int32_T idx;
+uint32_T bpIndices[3];
+uint32_T bpIndices_p[3];
+boolean_T anyInputSizeChanged;
+boolean_T exitg1;
+boolean_T hchx1iqazc_idx_0;
+boolean_T hchx1iqazc_idx_1;
+boolean_T he3pdpmscu_idx_0;
+boolean_T he3pdpmscu_idx_1;
+%closefile localVarDecl
+%assign tlcOutputsFcnOfS17B3 = OpaqueTLCBlockFcn("Outputs", 17, 3, 0, 2, 0)
+%assign tlcOutputsFcnOfS17B4 = OpaqueTLCBlockFcn("Outputs", 17, 4, 0, 2, 1)
+%assign tlcOutputsFcnOfS17B5 = OpaqueTLCBlockFcn("Outputs", 17, 5, 0, 2, 2)
+%assign tlcOutputsFcnOfS17B7 = OpaqueTLCBlockFcn("Outputs", 17, 7, 0, 2, 3)
+%assign tlcOutputsFcnOfS16B0 = OpaqueTLCBlockFcn("Outputs", 16, 0, 0, 2, 4)
+%assign tlcOutputsFcnOfS16B1 = OpaqueTLCBlockFcn("Outputs", 16, 1, 0, 2, 5)
+%assign tlcOutputsFcnOfS16B3 = OpaqueTLCBlockFcn("Outputs", 16, 3, 0, 2, 6)
+%assign tlcOutputsFcnOfS17B18 = OpaqueTLCBlockFcn("Outputs", 17, 18, 0, 2, 7)
+%assign tlcOutputsFcnOfS17B19 = OpaqueTLCBlockFcn("Outputs", 17, 19, 0, 2, 8)
+%assign tlcOutputsFcnOfS17B26 = OpaqueTLCBlockFcn("Outputs", 17, 26, 0, 2, 9)
+%assign tlcOutputsFcnOfS17B29 = OpaqueTLCBlockFcn("Outputs", 17, 29, 0, 2, 10)
+%assign tlcOutputsFcnOfS17B64 = OpaqueTLCBlockFcn("Outputs", 17, 64, 0, 2, 11)
+%assign tlcOutputsFcnOfS17B65 = OpaqueTLCBlockFcn("Outputs", 17, 65, 0, 2, 12)
+%assign tlcOutputsFcnOfS17B67 = OpaqueTLCBlockFcn("Outputs", 17, 67, 0, 2, 13)
+%assign tlcOutputsFcnOfS17B68 = OpaqueTLCBlockFcn("Outputs", 17, 68, 0, 2, 14)
+%assign tlcOutputsFcnOfS17B85 = OpaqueTLCBlockFcn("Outputs", 17, 85, 0, 2, 15)
+%assign tlcOutputsFcnOfS17B86 = OpaqueTLCBlockFcn("Outputs", 17, 86, 0, 2, 16)
+%<SLibGetRootInportsFromFile(system, TLC_FALSE)>
+%<SLibGenerateExtModeOutput(system)>
+rtB.gdk2ns2tok = rtX.ie0vm1objg;
+d43xrwflyk = rtP.Gain6_Gain * rtB.gdk2ns2tok * rtP.Gain7_Gain / %<(SLibCG_SE(LibGetT()))>;
+if (%<(LibIsMajorTimeStep())>) {
+    if (rtDW.kmlwvwgp2f != 0) {
+        %<(RTMSetBlockStateForSolverChangedAtMajorStep())>;
+        %<(RTMSetContTimeOutputInconsistentWithStateAtMajorStep())>;
+        rtDW.kmlwvwgp2f = 0;
+    }
+    rtB.pspv5m2tdp = muDoubleScalarSqrt(d43xrwflyk);
+} else if (d43xrwflyk < 0.0) {
+    rtB.pspv5m2tdp = -muDoubleScalarSqrt(muDoubleScalarAbs(d43xrwflyk));
+    rtDW.kmlwvwgp2f = 1;
+} else {
+    rtB.pspv5m2tdp = muDoubleScalarSqrt(d43xrwflyk);
+}
+rtB.bmxsco1avl = rtB.pspv5m2tdp / rtP.Constant_Value_gyf0au0txa * rtP.Gain_Gain_bzi0wvqkoe;
+                            {
+
+
+            {
+                const char *errMsg = (NULL);
+
+                void * excelLoader = (void *) rtDW.mbfomrke5h.ExcelLoader;
+                void * TempDoubleOutput = (void *) &rtDW.d3n2usxghr.TempDoubleOutput;
+                if (excelLoader != (NULL) && (%<(LibIsMajorTimeStep())> || !0) ) {
+                    void *y = &j5u2fjehs4;
+                    real_T t = %<(LibGetTaskTimeFromTIDWrapper(17, 0))>;
+                    errMsg = rtwExcelLoaderGetOutputSinceR2024b(&TempDoubleOutput,excelLoader,t, %<(LibIsMajorTimeStep())>, 0.0
+                    );
+
+                    if (errMsg != (NULL)) {
+                        %<(RTMSetErrStat("errMsg"))>;
+                        return;
+                    }
+
+            j5u2fjehs4 = rtDW.d3n2usxghr.TempDoubleOutput;
+
+                }
+
+            }
+
+    }
+
+rtB.hqqseqcdch = rtP.Gain4_Gain * j5u2fjehs4;
+if (%<(SLibCGIRIsSampleHit(3, 17))>) {
+    rtB.pn0tswv4x1 = (rtDW.ehai3ckfo3 > rtP.Constant3_Value);
+    if (rtDW.bm1ae41pm1) {
+        rtDW.bm1ae41pm1 = false;
+        rtB.fepjoc1mts = rtP.Initial_Value;
+    } else {
+        rtB.fepjoc1mts = rtDW.ehai3ckfo3 - rtP.Constant3_Value;
+    }
+    if (rtB.pn0tswv4x1 && (rtDW.gsfiakcjqc <= 0)) {
+        rtDW.ehai3ckfo3 = rtB.fepjoc1mts;
+    }
+    if (%<(SLibCGIRIsSampleHit(4, 17))>) {
+        rtB.iovyg1obgo[0] = rtDW.cswqu4ghej[0];
+        rtB.mncjdu42kn[0] = rtDW.cs0riggyvy[0];
+        rtB.iovyg1obgo[1] = rtDW.cswqu4ghej[1];
+        rtB.mncjdu42kn[1] = rtDW.cs0riggyvy[1];
+        rtB.iovyg1obgo[2] = rtDW.cswqu4ghej[2];
+        rtB.mncjdu42kn[2] = rtDW.cs0riggyvy[2];
+        rtB.cm1ioifn4o = rtDW.jhw3wgd2b0;
+    }
+    if (rtB.cm1ioifn4o > rtP.Switch1_Threshold) {
+        anyInputSizeChanged = (rtDW.ehai3ckfo3 >= rtB.iovyg1obgo[0]) ^ (rtDW.ehai3ckfo3 >= rtB.mncjdu42kn[0]);
+        he3pdpmscu_idx_0 = anyInputSizeChanged;
+        hchx1iqazc_idx_0 = !anyInputSizeChanged;
+        anyInputSizeChanged = (rtDW.ehai3ckfo3 >= rtB.iovyg1obgo[1]) ^ (rtDW.ehai3ckfo3 >= rtB.mncjdu42kn[1]);
+        he3pdpmscu_idx_1 = anyInputSizeChanged;
+        hchx1iqazc_idx_1 = !anyInputSizeChanged;
+        anyInputSizeChanged = (rtDW.ehai3ckfo3 >= rtB.iovyg1obgo[2]) ^ (rtDW.ehai3ckfo3 >= rtB.mncjdu42kn[2]);
+        rtB.gcrzmmgsfo[0] = he3pdpmscu_idx_0;
+        rtB.gcrzmmgsfo[1] = hchx1iqazc_idx_0;
+        rtB.gcrzmmgsfo[2] = he3pdpmscu_idx_1;
+        rtB.gcrzmmgsfo[3] = hchx1iqazc_idx_1;
+        rtB.gcrzmmgsfo[4] = anyInputSizeChanged;
+        rtB.gcrzmmgsfo[5] = !anyInputSizeChanged;
+    } else {
+        for (i = 0; i < 6; i++) {
+            rtB.gcrzmmgsfo[i] = rtP.Zerovector_Value[i];
+        }
+    }
+}
+if (%<(SLibCGIRIsSampleHit(2, 17))>) {
+    rtB.cmpgwjtlcv[0] = rtB.gcrzmmgsfo[0];
+    rtB.cmpgwjtlcv[1] = 0.0;
+    rtB.cmpgwjtlcv[2] = 0.0;
+    rtDW.pt35i2q1ar[0] = !(rtB.cmpgwjtlcv[0] == rtDW.pt35i2q1ar[1]);
+    rtDW.pt35i2q1ar[1] = rtB.cmpgwjtlcv[0];
+    rtB.cmpgwjtlcv[0] = rtDW.pt35i2q1ar[1];
+    rtB.cmpgwjtlcv[3] = rtDW.pt35i2q1ar[0];
+    rtB.efpkncmiww[0] = rtB.gcrzmmgsfo[1];
+    rtB.efpkncmiww[1] = 0.0;
+    rtB.efpkncmiww[2] = 0.0;
+    rtDW.fjoy0y4fq4[0] = !(rtB.efpkncmiww[0] == rtDW.fjoy0y4fq4[1]);
+    rtDW.fjoy0y4fq4[1] = rtB.efpkncmiww[0];
+    rtB.efpkncmiww[0] = rtDW.fjoy0y4fq4[1];
+    rtB.efpkncmiww[3] = rtDW.fjoy0y4fq4[0];
+    rtB.mdduc30f5v[0] = rtB.gcrzmmgsfo[2];
+    rtB.mdduc30f5v[1] = 0.0;
+    rtB.mdduc30f5v[2] = 0.0;
+    rtDW.mdecnaffiu[0] = !(rtB.mdduc30f5v[0] == rtDW.mdecnaffiu[1]);
+    rtDW.mdecnaffiu[1] = rtB.mdduc30f5v[0];
+    rtB.mdduc30f5v[0] = rtDW.mdecnaffiu[1];
+    rtB.mdduc30f5v[3] = rtDW.mdecnaffiu[0];
+    rtB.osynn2uznf[0] = rtB.gcrzmmgsfo[3];
+    rtB.osynn2uznf[1] = 0.0;
+    rtB.osynn2uznf[2] = 0.0;
+    rtDW.nvgb5tqypx[0] = !(rtB.osynn2uznf[0] == rtDW.nvgb5tqypx[1]);
+    rtDW.nvgb5tqypx[1] = rtB.osynn2uznf[0];
+    rtB.osynn2uznf[0] = rtDW.nvgb5tqypx[1];
+    rtB.osynn2uznf[3] = rtDW.nvgb5tqypx[0];
+    rtB.n3rbbklgr3[0] = rtB.gcrzmmgsfo[4];
+    rtB.n3rbbklgr3[1] = 0.0;
+    rtB.n3rbbklgr3[2] = 0.0;
+    rtDW.m11wmd2sa5[0] = !(rtB.n3rbbklgr3[0] == rtDW.m11wmd2sa5[1]);
+    rtDW.m11wmd2sa5[1] = rtB.n3rbbklgr3[0];
+    rtB.n3rbbklgr3[0] = rtDW.m11wmd2sa5[1];
+    rtB.n3rbbklgr3[3] = rtDW.m11wmd2sa5[0];
+    rtB.c4zmsxsnjp[0] = rtB.gcrzmmgsfo[5];
+    rtB.c4zmsxsnjp[1] = 0.0;
+    rtB.c4zmsxsnjp[2] = 0.0;
+    rtDW.lmkloxg31k[0] = !(rtB.c4zmsxsnjp[0] == rtDW.lmkloxg31k[1]);
+    rtDW.lmkloxg31k[1] = rtB.c4zmsxsnjp[0];
+    rtB.c4zmsxsnjp[0] = rtDW.lmkloxg31k[1];
+    rtB.c4zmsxsnjp[3] = rtDW.lmkloxg31k[0];
+    if (rtDW.g143tgxi4a) {
+        tmp[0] = rtP.RTP_F2AF8E8A_w_Value;
+        tmp[1] = rtP.RTP_6D09711E_angular_position_Value;
+        tmp[2] = rtP.RTP_0024761A_stateOfCharge_Value;
+        tmp[3] = rtP.RTP_00401ADF_stateOfCharge_Value;
+        tmp[4] = rtP.RTP_0206A486_stateOfCharge_Value;
+        tmp[5] = rtP.RTP_0262C843_stateOfCharge_Value;
+        tmp[6] = rtP.RTP_03A0A274_stateOfCharge_Value;
+        tmp[7] = rtP.RTP_03C4CEB1_stateOfCharge_Value;
+        tmp[8] = rtP.RTP_04A90AA8_stateOfCharge_Value;
+        tmp[9] = rtP.RTP_04CD666D_stateOfCharge_Value;
+        tmp[10] = rtP.RTP_050F0C5A_stateOfCharge_Value;
+        tmp[11] = rtP.RTP_056B609F_stateOfCharge_Value;
+        tmp[12] = rtP.RTP_068BD834_stateOfCharge_Value;
+        tmp[13] = rtP.RTP_06EFB4F1_stateOfCharge_Value;
+        tmp[14] = rtP.RTP_072DDEC6_stateOfCharge_Value;
+        tmp[15] = rtP.RTP_0749B203_stateOfCharge_Value;
+        tmp[16] = rtP.RTP_0ABA5B10_stateOfCharge_Value;
+        tmp[17] = rtP.RTP_0B783127_stateOfCharge_Value;
+        tmp[18] = rtP.RTP_0C15F53E_stateOfCharge_Value;
+        tmp[19] = rtP.RTP_0DD79F09_stateOfCharge_Value;
+        tmp[20] = rtP.RTP_2051BC8D_stateOfCharge_Value;
+        tmp[21] = rtP.RTP_20996507_stateOfCharge_Value;
+        tmp[22] = rtP.RTP_215B0F30_stateOfCharge_Value;
+        tmp[23] = rtP.RTP_2193D6BA_stateOfCharge_Value;
+        tmp[24] = rtP.RTP_22DFDB5E_stateOfCharge_Value;
+        tmp[25] = rtP.RTP_231DB169_stateOfCharge_Value;
+        tmp[26] = rtP.RTP_25D67382_stateOfCharge_Value;
+        tmp[27] = rtP.RTP_2652A7EC_stateOfCharge_Value;
+        tmp[28] = rtP.RTP_26FE12A3_stateOfCharge_Value;
+        tmp[29] = rtP.RTP_273C7894_stateOfCharge_Value;
+        tmp[30] = rtP.RTP_2790CDDB_stateOfCharge_Value;
+        tmp[31] = rtP.RTP_28892FDE_stateOfCharge_Value;
+        tmp[32] = rtP.RTP_28ED431B_stateOfCharge_Value;
+        tmp[33] = rtP.RTP_292F292C_stateOfCharge_Value;
+        tmp[34] = rtP.RTP_294B45E9_stateOfCharge_Value;
+        tmp[35] = rtP.RTP_2AABFD42_stateOfCharge_Value;
+        tmp[36] = rtP.RTP_2ACF9187_stateOfCharge_Value;
+        tmp[37] = rtP.RTP_2B0DFBB0_stateOfCharge_Value;
+        tmp[38] = rtP.RTP_2B699775_stateOfCharge_Value;
+        tmp[39] = rtP.RTP_2C04536C_stateOfCharge_Value;
+        tmp[40] = rtP.RTP_2C603FA9_stateOfCharge_Value;
+        tmp[41] = rtP.RTP_2DA2559E_stateOfCharge_Value;
+        tmp[42] = rtP.RTP_2DC6395B_stateOfCharge_Value;
+        tmp[43] = rtP.RTP_2E2681F0_stateOfCharge_Value;
+        tmp[44] = rtP.RTP_2E42ED35_stateOfCharge_Value;
+        tmp[45] = rtP.RTP_2E8A34BF_stateOfCharge_Value;
+        tmp[46] = rtP.RTP_2F485E88_stateOfCharge_Value;
+        tmp[47] = rtP.RTP_2F808702_stateOfCharge_Value;
+        tmp[48] = rtP.RTP_2FE4EBC7_stateOfCharge_Value;
+        tmp[49] = rtP.RTP_30B7B6B9_stateOfCharge_Value;
+        tmp[50] = rtP.RTP_37DA72A0_stateOfCharge_Value;
+        tmp[51] = rtP.RTP_380B492F_stateOfCharge_Value;
+        tmp[52] = rtP.RTP_386F25EA_stateOfCharge_Value;
+        tmp[53] = rtP.RTP_39AD4FDD_stateOfCharge_Value;
+        tmp[54] = rtP.RTP_39C92318_stateOfCharge_Value;
+        tmp[55] = rtP.RTP_3A299BB3_stateOfCharge_Value;
+        tmp[56] = rtP.RTP_3A4DF776_stateOfCharge_Value;
+        tmp[57] = rtP.RTP_3BEBF184_stateOfCharge_Value;
+        tmp[58] = rtP.RTP_3C86359D_stateOfCharge_Value;
+        tmp[59] = rtP.RTP_3CE25958_stateOfCharge_Value;
+        tmp[60] = rtP.RTP_3D20336F_stateOfCharge_Value;
+        tmp[61] = rtP.RTP_3D445FAA_stateOfCharge_Value;
+        tmp[62] = rtP.RTP_3EA4E701_stateOfCharge_Value;
+        tmp[63] = rtP.RTP_3EC08BC4_stateOfCharge_Value;
+        tmp[64] = rtP.RTP_3F02E1F3_stateOfCharge_Value;
+        tmp[65] = rtP.RTP_3F668D36_stateOfCharge_Value;
+        tmp[66] = rtP.RTP_40DD4236_stateOfCharge_Value;
+        tmp[67] = rtP.RTP_47B0862F_stateOfCharge_Value;
+        tmp[68] = rtP.RTP_4805D165_stateOfCharge_Value;
+        tmp[69] = rtP.RTP_4861BDA0_stateOfCharge_Value;
+        tmp[70] = rtP.RTP_49A3D797_stateOfCharge_Value;
+        tmp[71] = rtP.RTP_49C7BB52_stateOfCharge_Value;
+        tmp[72] = rtP.RTP_4A2703F9_stateOfCharge_Value;
+        tmp[73] = rtP.RTP_4A436F3C_stateOfCharge_Value;
+        tmp[74] = rtP.RTP_4B81050B_stateOfCharge_Value;
+        tmp[75] = rtP.RTP_4BE569CE_stateOfCharge_Value;
+        tmp[76] = rtP.RTP_4CECC112_stateOfCharge_Value;
+        tmp[77] = rtP.RTP_4D2EAB25_stateOfCharge_Value;
+        tmp[78] = rtP.RTP_4D4AC7E0_stateOfCharge_Value;
+        tmp[79] = rtP.RTP_4EAA7F4B_stateOfCharge_Value;
+        tmp[80] = rtP.RTP_4ECE138E_stateOfCharge_Value;
+        tmp[81] = rtP.RTP_4F0C79B9_stateOfCharge_Value;
+        tmp[82] = rtP.RTP_4F68157C_stateOfCharge_Value;
+        tmp[83] = rtP.RTP_503B4802_stateOfCharge_Value;
+        tmp[84] = rtP.RTP_5097FD4D_stateOfCharge_Value;
+        tmp[85] = rtP.RTP_5155977A_stateOfCharge_Value;
+        tmp[86] = rtP.RTP_51F92235_stateOfCharge_Value;
+        tmp[87] = rtP.RTP_52D14314_stateOfCharge_Value;
+        tmp[88] = rtP.RTP_53132923_stateOfCharge_Value;
+        tmp[89] = rtP.RTP_541A81FF_stateOfCharge_Value;
+        tmp[90] = rtP.RTP_55D8EBC8_stateOfCharge_Value;
+        tmp[91] = rtP.RTP_565C3FA6_stateOfCharge_Value;
+        tmp[92] = rtP.RTP_5694E62C_stateOfCharge_Value;
+        tmp[93] = rtP.RTP_57568C1B_stateOfCharge_Value;
+        tmp[94] = rtP.RTP_584F6E1E_stateOfCharge_Value;
+        tmp[95] = rtP.RTP_5887B794_stateOfCharge_Value;
+        tmp[96] = rtP.RTP_58E3DB51_stateOfCharge_Value;
+        tmp[97] = rtP.RTP_5945DDA3_stateOfCharge_Value;
+        tmp[98] = rtP.RTP_598D0429_stateOfCharge_Value;
+        tmp[99] = rtP.RTP_5AA56508_stateOfCharge_Value;
+        tmp[100] = rtP.RTP_5AC109CD_stateOfCharge_Value;
+        tmp[101] = rtP.RTP_5B0363FA_stateOfCharge_Value;
+        tmp[102] = rtP.RTP_5B670F3F_stateOfCharge_Value;
+        tmp[103] = rtP.RTP_5C0ACB26_stateOfCharge_Value;
+        tmp[104] = rtP.RTP_5C6EA7E3_stateOfCharge_Value;
+        tmp[105] = rtP.RTP_5DACCDD4_stateOfCharge_Value;
+        tmp[106] = rtP.RTP_5DC8A111_stateOfCharge_Value;
+        tmp[107] = rtP.RTP_5E2819BA_stateOfCharge_Value;
+        tmp[108] = rtP.RTP_5E4C757F_stateOfCharge_Value;
+        tmp[109] = rtP.RTP_5F8E1F48_stateOfCharge_Value;
+        tmp[110] = rtP.RTP_5FEA738D_stateOfCharge_Value;
+        tmp[111] = rtP.RTP_64ED2D99_stateOfCharge_Value;
+        tmp[112] = rtP.RTP_6D09711E_angular_velocity_Value;
+        tmp[113] = rtP.RTP_702AEE50_stateOfCharge_Value;
+        tmp[114] = rtP.RTP_704E8295_stateOfCharge_Value;
+        tmp[115] = rtP.RTP_718CE8A2_stateOfCharge_Value;
+        tmp[116] = rtP.RTP_71E88467_stateOfCharge_Value;
+        tmp[117] = rtP.RTP_72083CCC_stateOfCharge_Value;
+        tmp[118] = rtP.RTP_726C5009_stateOfCharge_Value;
+        tmp[119] = rtP.RTP_73AE3A3E_stateOfCharge_Value;
+        tmp[120] = rtP.RTP_73CA56FB_stateOfCharge_Value;
+        tmp[121] = rtP.RTP_74A792E2_stateOfCharge_Value;
+        tmp[122] = rtP.RTP_74C3FE27_stateOfCharge_Value;
+        tmp[123] = rtP.RTP_7565F8D5_stateOfCharge_Value;
+        tmp[124] = rtP.RTP_7685407E_stateOfCharge_Value;
+        tmp[125] = rtP.RTP_76E12CBB_stateOfCharge_Value;
+        tmp[126] = rtP.RTP_7723468C_stateOfCharge_Value;
+        tmp[127] = rtP.RTP_77472A49_stateOfCharge_Value;
+        tmp[128] = rtP.RTP_7AD0AF9F_stateOfCharge_Value;
+        tmp[129] = rtP.RTP_7C7F01B1_stateOfCharge_Value;
+        tmp[130] = rtP.RTP_7DBD6B86_stateOfCharge_Value;
+        tmp[131] = rtP.RTP_90FF074E_stateOfCharge_Value;
+        tmp[132] = rtP.RTP_913D6D79_stateOfCharge_Value;
+        tmp[133] = rtP.RTP_9271609D_stateOfCharge_Value;
+        tmp[134] = rtP.RTP_92B9B917_stateOfCharge_Value;
+        tmp[135] = rtP.RTP_937BD320_stateOfCharge_Value;
+        tmp[136] = rtP.RTP_93B30AAA_stateOfCharge_Value;
+        tmp[137] = rtP.RTP_94727BFC_stateOfCharge_Value;
+        tmp[138] = rtP.RTP_94DECEB3_stateOfCharge_Value;
+        tmp[139] = rtP.RTP_951CA484_stateOfCharge_Value;
+        tmp[140] = rtP.RTP_95B011CB_stateOfCharge_Value;
+        tmp[141] = rtP.RTP_9634C5A5_stateOfCharge_Value;
+        tmp[142] = rtP.RTP_97F6AF92_stateOfCharge_Value;
+        tmp[143] = rtP.RTP_988B2152_stateOfCharge_Value;
+        tmp[144] = rtP.RTP_98EF4D97_stateOfCharge_Value;
+        tmp[145] = rtP.RTP_992D27A0_stateOfCharge_Value;
+        tmp[146] = rtP.RTP_99494B65_stateOfCharge_Value;
+        tmp[147] = rtP.RTP_9AA9F3CE_stateOfCharge_Value;
+        tmp[148] = rtP.RTP_9ACD9F0B_stateOfCharge_Value;
+        tmp[149] = rtP.RTP_9B6B99F9_stateOfCharge_Value;
+        tmp[150] = rtP.RTP_9C065DE0_stateOfCharge_Value;
+        tmp[151] = rtP.RTP_9C623125_stateOfCharge_Value;
+        tmp[152] = rtP.RTP_9CAAE8AF_stateOfCharge_Value;
+        tmp[153] = rtP.RTP_9D688298_stateOfCharge_Value;
+        tmp[154] = rtP.RTP_9DA05B12_stateOfCharge_Value;
+        tmp[155] = rtP.RTP_9DC437D7_stateOfCharge_Value;
+        tmp[156] = rtP.RTP_9E248F7C_stateOfCharge_Value;
+        tmp[157] = rtP.RTP_9E40E3B9_stateOfCharge_Value;
+        tmp[158] = rtP.RTP_9FE6E54B_stateOfCharge_Value;
+        tmp[159] = rtP.RTP_A008AB28_stateOfCharge_Value;
+        tmp[160] = rtP.RTP_A0A41E67_stateOfCharge_Value;
+        tmp[161] = rtP.RTP_A0C072A2_stateOfCharge_Value;
+        tmp[162] = rtP.RTP_A1021895_stateOfCharge_Value;
+        tmp[163] = rtP.RTP_A1667450_stateOfCharge_Value;
+        tmp[164] = rtP.RTP_A286CCFB_stateOfCharge_Value;
+        tmp[165] = rtP.RTP_A2E2A03E_stateOfCharge_Value;
+        tmp[166] = rtP.RTP_A320CA09_stateOfCharge_Value;
+        tmp[167] = rtP.RTP_A344A6CC_stateOfCharge_Value;
+        tmp[168] = rtP.RTP_A42962D5_stateOfCharge_Value;
+        tmp[169] = rtP.RTP_A44D0E10_stateOfCharge_Value;
+        tmp[170] = rtP.RTP_A58F6427_stateOfCharge_Value;
+        tmp[171] = rtP.RTP_A60BB049_stateOfCharge_Value;
+        tmp[172] = rtP.RTP_A66FDC8C_stateOfCharge_Value;
+        tmp[173] = rtP.RTP_A7ADB6BB_stateOfCharge_Value;
+        tmp[174] = rtP.RTP_A7C9DA7E_stateOfCharge_Value;
+        tmp[175] = rtP.RTP_A8D0387B_stateOfCharge_Value;
+        tmp[176] = rtP.RTP_A912524C_stateOfCharge_Value;
+        tmp[177] = rtP.RTP_A9BEE703_stateOfCharge_Value;
+        tmp[178] = rtP.RTP_AA968622_stateOfCharge_Value;
+        tmp[179] = rtP.RTP_AB54EC15_stateOfCharge_Value;
+        tmp[180] = rtP.RTP_AC5D44C9_stateOfCharge_Value;
+        tmp[181] = rtP.RTP_AD9F2EFE_stateOfCharge_Value;
+        tmp[182] = rtP.RTP_AE1BFA90_stateOfCharge_Value;
+        tmp[183] = rtP.RTP_AED3231A_stateOfCharge_Value;
+        tmp[184] = rtP.RTP_AF11492D_stateOfCharge_Value;
+        tmp[185] = rtP.RTP_AFD990A7_stateOfCharge_Value;
+        tmp[186] = rtP.RTP_B0267896_stateOfCharge_Value;
+        tmp[187] = rtP.RTP_B0421453_stateOfCharge_Value;
+        tmp[188] = rtP.RTP_B1807E64_stateOfCharge_Value;
+        tmp[189] = rtP.RTP_B1E412A1_stateOfCharge_Value;
+        tmp[190] = rtP.RTP_B204AA0A_stateOfCharge_Value;
+        tmp[191] = rtP.RTP_B260C6CF_stateOfCharge_Value;
+        tmp[192] = rtP.RTP_B3A2ACF8_stateOfCharge_Value;
+        tmp[193] = rtP.RTP_B3C6C03D_stateOfCharge_Value;
+        tmp[194] = rtP.RTP_B4AB0424_stateOfCharge_Value;
+        tmp[195] = rtP.RTP_B4CF68E1_stateOfCharge_Value;
+        tmp[196] = rtP.RTP_B50D02D6_stateOfCharge_Value;
+        tmp[197] = rtP.RTP_B5696E13_stateOfCharge_Value;
+        tmp[198] = rtP.RTP_B689D6B8_stateOfCharge_Value;
+        tmp[199] = rtP.RTP_B6EDBA7D_stateOfCharge_Value;
+        tmp[200] = rtP.RTP_B74BBC8F_stateOfCharge_Value;
+        tmp[201] = rtP.RTP_B89A8700_stateOfCharge_Value;
+        tmp[202] = rtP.RTP_B958ED37_stateOfCharge_Value;
+        tmp[203] = rtP.RTP_BE35292E_stateOfCharge_Value;
+        tmp[204] = rtP.RTP_BFF74319_stateOfCharge_Value;
+        tmp[205] = rtP.RTP_C04C8C19_stateOfCharge_Value;
+        tmp[206] = rtP.RTP_C18EE62E_stateOfCharge_Value;
+        tmp[207] = rtP.RTP_C1EA8AEB_stateOfCharge_Value;
+        tmp[208] = rtP.RTP_C20A3240_stateOfCharge_Value;
+        tmp[209] = rtP.RTP_C26E5E85_stateOfCharge_Value;
+        tmp[210] = rtP.RTP_C3AC34B2_stateOfCharge_Value;
+        tmp[211] = rtP.RTP_C3C85877_stateOfCharge_Value;
+        tmp[212] = rtP.RTP_C4A59C6E_stateOfCharge_Value;
+        tmp[213] = rtP.RTP_C4C1F0AB_stateOfCharge_Value;
+        tmp[214] = rtP.RTP_C5039A9C_stateOfCharge_Value;
+        tmp[215] = rtP.RTP_C567F659_stateOfCharge_Value;
+        tmp[216] = rtP.RTP_C6874EF2_stateOfCharge_Value;
+        tmp[217] = rtP.RTP_C6E32237_stateOfCharge_Value;
+        tmp[218] = rtP.RTP_C7214800_stateOfCharge_Value;
+        tmp[219] = rtP.RTP_C74524C5_stateOfCharge_Value;
+        tmp[220] = rtP.RTP_C8F0738F_stateOfCharge_Value;
+        tmp[221] = rtP.RTP_C93219B8_stateOfCharge_Value;
+        tmp[222] = rtP.RTP_CE5FDDA1_stateOfCharge_Value;
+        tmp[223] = rtP.RTP_CF9DB796_stateOfCharge_Value;
+        tmp[224] = rtP.RTP_D0AA862D_stateOfCharge_Value;
+        tmp[225] = rtP.RTP_D0CEEAE8_stateOfCharge_Value;
+        tmp[226] = rtP.RTP_D10C80DF_stateOfCharge_Value;
+        tmp[227] = rtP.RTP_D168EC1A_stateOfCharge_Value;
+        tmp[228] = rtP.RTP_D28854B1_stateOfCharge_Value;
+        tmp[229] = rtP.RTP_D2EC3874_stateOfCharge_Value;
+        tmp[230] = rtP.RTP_D32E5243_stateOfCharge_Value;
+        tmp[231] = rtP.RTP_D34A3E86_stateOfCharge_Value;
+        tmp[232] = rtP.RTP_D427FA9F_stateOfCharge_Value;
+        tmp[233] = rtP.RTP_D443965A_stateOfCharge_Value;
+        tmp[234] = rtP.RTP_D581FC6D_stateOfCharge_Value;
+        tmp[235] = rtP.RTP_D5E590A8_stateOfCharge_Value;
+        tmp[236] = rtP.RTP_D6052803_stateOfCharge_Value;
+        tmp[237] = rtP.RTP_D70F9BBE_stateOfCharge_Value;
+        tmp[238] = rtP.RTP_D7A32EF1_stateOfCharge_Value;
+        tmp[239] = rtP.RTP_D7C74234_stateOfCharge_Value;
+        tmp[240] = rtP.RTP_D8DEA031_stateOfCharge_Value;
+        tmp[241] = rtP.RTP_D91CCA06_stateOfCharge_Value;
+        tmp[242] = rtP.RTP_D9D4138C_stateOfCharge_Value;
+        tmp[243] = rtP.RTP_DA981E68_stateOfCharge_Value;
+        tmp[244] = rtP.RTP_DB5A745F_stateOfCharge_Value;
+        tmp[245] = rtP.RTP_DC53DC83_stateOfCharge_Value;
+        tmp[246] = rtP.RTP_DD91B6B4_stateOfCharge_Value;
+        tmp[247] = rtP.RTP_DE1562DA_stateOfCharge_Value;
+        tmp[248] = rtP.RTP_DEB9D795_stateOfCharge_Value;
+        tmp[249] = rtP.RTP_DFD708ED_stateOfCharge_Value;
+        tmp[250] = rtP.RTP_E0F19F04_stateOfCharge_Value;
+        tmp[251] = rtP.RTP_E133F533_stateOfCharge_Value;
+        tmp[252] = rtP.RTP_E21B9412_stateOfCharge_Value;
+        tmp[253] = rtP.RTP_E2B7215D_stateOfCharge_Value;
+        tmp[254] = rtP.RTP_E3754B6A_stateOfCharge_Value;
+        tmp[255] = rtP.RTP_E3D9FE25_stateOfCharge_Value;
+        tmp[256] = rtP.RTP_E47CE3B6_stateOfCharge_Value;
+        tmp[257] = rtP.RTP_E4B43A3C_stateOfCharge_Value;
+        tmp[258] = rtP.RTP_E526B62B_v_Value;
+        tmp[259] = rtP.RTP_E576500B_stateOfCharge_Value;
+        tmp[260] = rtP.RTP_E5BE8981_stateOfCharge_Value;
+        tmp[261] = rtP.RTP_E63A5DEF_stateOfCharge_Value;
+        tmp[262] = rtP.RTP_E7F837D8_stateOfCharge_Value;
+        tmp[263] = rtP.RTP_E8E1D5DD_stateOfCharge_Value;
+        tmp[264] = rtP.RTP_E923BFEA_stateOfCharge_Value;
+        tmp[265] = rtP.RTP_E947D32F_stateOfCharge_Value;
+        tmp[266] = rtP.RTP_EA6FB20E_stateOfCharge_Value;
+        tmp[267] = rtP.RTP_EAA76B84_stateOfCharge_Value;
+        tmp[268] = rtP.RTP_EAC30741_stateOfCharge_Value;
+        tmp[269] = rtP.RTP_EB016D76_stateOfCharge_Value;
+        tmp[270] = rtP.RTP_EB6501B3_stateOfCharge_Value;
+        tmp[271] = rtP.RTP_EBADD839_stateOfCharge_Value;
+        tmp[272] = rtP.RTP_EC6CA96F_stateOfCharge_Value;
+        tmp[273] = rtP.RTP_EDAEC358_stateOfCharge_Value;
+        tmp[274] = rtP.RTP_EDCAAF9D_stateOfCharge_Value;
+        tmp[275] = rtP.RTP_EE2A1736_stateOfCharge_Value;
+        tmp[276] = rtP.RTP_EE4E7BF3_stateOfCharge_Value;
+        tmp[277] = rtP.RTP_EF8C11C4_stateOfCharge_Value;
+        tmp[278] = rtP.RTP_EFE87D01_stateOfCharge_Value;
+        diag = rtw_create_diagnostics();
+        diagTree = neu_diagnostic_manager_get_initial_tree(diag);
+        expl_temp.mRealParameters.mN = 279;
+        expl_temp.mRealParameters.mX = &tmp[0];
+        expl_temp.mLogicalParameters.mN = 0;
+        expl_temp.mLogicalParameters.mX = NULL;
+        expl_temp.mIntegerParameters.mN = 0;
+        expl_temp.mIntegerParameters.mX = NULL;
+        expl_temp.mIndexParameters.mN = 0;
+        expl_temp.mIndexParameters.mX = NULL;
+        anyInputSizeChanged = nesl_rtp_manager_set_rtps((NeslRtpManager *)rtDW.d2wi2q2xds, %<(LibGetT())>, expl_temp, diag);
+        if (!anyInputSizeChanged) {
+            anyInputSizeChanged = error_buffer_is_empty(%<(LibGetRTModelErrorStatus())>);
+            if (anyInputSizeChanged) {
+                msg = rtw_diagnostics_msg(diagTree);
+                %<(LibSetRTModelErrorStatus("msg"))>;
+            }
+        }
+    }
+    rtDW.g143tgxi4a = false;
+    simulator = (const Simulator *)rtDW.hipi5bfdiw;
+    diagnosticManager = (NeuDiagnosticManager *)rtDW.elqjayf431;
+    inputs.mN = 6;
+    inputs.mX = &rtDW.p22rgfhj0y[0];
+    rtDW.p22rgfhj0y[0] = rtB.cmpgwjtlcv[0];
+    rtDW.p22rgfhj0y[1] = rtB.efpkncmiww[0];
+    rtDW.p22rgfhj0y[2] = rtB.mdduc30f5v[0];
+    rtDW.p22rgfhj0y[3] = rtB.osynn2uznf[0];
+    rtDW.p22rgfhj0y[4] = rtB.n3rbbklgr3[0];
+    rtDW.p22rgfhj0y[5] = rtB.c4zmsxsnjp[0];
+    states.mN = 7054;
+    states.mX = &rtDW.m3ak3zwrdi[0];
+    outputs.mN = 12;
+    outputs.mX = &rtB.eeui10qss5[0];
+    he3pdpmscu_idx_0 = false;
+    if (rtDW.jnalm0h352 == 0.0) {
+        he3pdpmscu_idx_0 = true;
+        rtDW.jnalm0h352 = 1.0;
+    }
+    anyInputSizeChanged = partitioning_get_reinit(simulator);
+    if ((boolean_T)(he3pdpmscu_idx_0 | anyInputSizeChanged)) {
+        hchx1iqazc_idx_0 = partitioning_start(simulator, diagnosticManager);
+        if (hchx1iqazc_idx_0) {
+            hchx1iqazc_idx_0 = error_buffer_is_empty(%<(LibGetRTModelErrorStatus())>);
+            if (hchx1iqazc_idx_0) {
+                msg_p = rtw_diagnostics_msg((const NeuDiagnosticTree *)rtDW.oluuhklf53);
+                %<(LibSetRTModelErrorStatus("msg_p"))>;
+            }
+        }
+    }
+    anyInputSizeChanged = partitioning_solve(simulator, &inputs, &states, &outputs, %<(LibGetT())>, diagnosticManager, he3pdpmscu_idx_0 | anyInputSizeChanged);
+    if (anyInputSizeChanged) {
+        anyInputSizeChanged = error_buffer_is_empty(%<(LibGetRTModelErrorStatus())>);
+        if (anyInputSizeChanged) {
+            msg_e = rtw_diagnostics_msg((const NeuDiagnosticTree *)rtDW.oluuhklf53);
+            %<(LibSetRTModelErrorStatus("msg_e"))>;
+        }
+    }
+}
+d43xrwflyk = rtB.hqqseqcdch - rtB.eeui10qss5[7];
+rtB.pywhdsmlex = d43xrwflyk * d43xrwflyk * rtP.Gain5_Gain;
+if (%<(SLibCGIRIsSampleHit(2, 17))>) {
+    rtB.l5dzbid2tu = rtDW.dirb5tawjj;
+    d43xrwflyk = rtB.eeui10qss5[7] / rtP.Constant_Value_iqk3wb1evy;
+    rtB.dji4hf5jjf = rtB.gt5an3oxwf * d43xrwflyk * rtP.Gain2_Gain * rtP.Gain3_Gain;
+%<tlcOutputsFcnOfS17B3>\
+%<tlcOutputsFcnOfS17B4>\
+}
+%<tlcOutputsFcnOfS17B5>\
+rtB.npejcenjkh = rtX.jb3myghg0e;
+for (oakqpinkq5 = 0; oakqpinkq5 < 1; oakqpinkq5++) {
+    d43xrwflyk = rtB.eeui10qss5[0];
+    if (%<(SLibCGIRIsSampleHit(2, 13))>) {
+        rtB.nchejrqkqc[oakqpinkq5].hzltjccv1x = 1.0 / (rtP.SOCEstimatorCoulombCounting_AH * 3600.0) * d43xrwflyk;
+    }
+    if (%<(SLibCGIRIsSampleHit(5, 13))>) {
+        if (rtDW.nchejrqkqc[oakqpinkq5].og0pkawmy5 != 0) {
+            rtDW.nchejrqkqc[oakqpinkq5].nv30ay1f1i = rtP.Constant_Value_klj1hfuhju;
+        }
+        rtB.g4tbv42gvs = rtDW.nchejrqkqc[oakqpinkq5].nv30ay1f1i;
+    }
+}
+rtB.bwda5fajgp = rtP.Gain6_Gain_eej1t2v45g * rtB.npejcenjkh - rtB.g4tbv42gvs;
+%<tlcOutputsFcnOfS17B7>\
+                            {
+
+
+            {
+                const char *errMsg = (NULL);
+
+                void * excelLoader = (void *) rtDW.oupgqriu4e.ExcelLoader;
+                void * TempDoubleOutput = (void *) &rtDW.acz5r2ilj0.TempDoubleOutput;
+                if (excelLoader != (NULL) && (%<(LibIsMajorTimeStep())> || !0) ) {
+                    void *y = &nl3etsxjop;
+                    real_T t = %<(LibGetTaskTimeFromTIDWrapper(17, 8))>;
+                    errMsg = rtwExcelLoaderGetOutputSinceR2024b(&TempDoubleOutput,excelLoader,t, %<(LibIsMajorTimeStep())>, 0.0
+                    );
+
+                    if (errMsg != (NULL)) {
+                        %<(RTMSetErrStat("errMsg"))>;
+                        return;
+                    }
+
+            nl3etsxjop = rtDW.acz5r2ilj0.TempDoubleOutput;
+
+                }
+
+            }
+
+    }
+
+rtB.gd3cd52kct = nl3etsxjop / rtP.percentage_Value;
+rtB.h3crn500jv = rtP.Constant_Value * rtB.gd3cd52kct;
+rtB.i1s15jorco = rtP.Gain_Gain_khx22rxytc * rtB.h3crn500jv;
+rtB.h5pz2kwaqj = rtP.Gain1_Gain_hkcm24cqdn * rtB.i1s15jorco;
+%<tlcOutputsFcnOfS16B0>\
+rtB.cu2xqvatbs = 0.0;
+rtB.cu2xqvatbs += rtP.u0HzLowpassFilter_C * rtX.bbxjatyveg;
+%<tlcOutputsFcnOfS16B1>\
+                            {
+
+
+            {
+                const char *errMsg = (NULL);
+
+                void * excelLoader = (void *) rtDW.hplkvatikf.ExcelLoader;
+                void * TempDoubleOutput = (void *) &rtDW.f41bygjlc5.TempDoubleOutput;
+                if (excelLoader != (NULL) && (%<(LibIsMajorTimeStep())> || !0) ) {
+                    void *y = &rtB.dgvwcf01rl;
+                    real_T t = %<(LibGetTaskTimeFromTIDWrapper(16, 2))>;
+                    errMsg = rtwExcelLoaderGetOutputSinceR2024b(&TempDoubleOutput,excelLoader,t, %<(LibIsMajorTimeStep())>, 0.0
+                    );
+
+                    if (errMsg != (NULL)) {
+                        %<(RTMSetErrStat("errMsg"))>;
+                        return;
+                    }
+
+            rtB.dgvwcf01rl = rtDW.f41bygjlc5.TempDoubleOutput;
+
+                }
+
+            }
+
+    }
+
+%<tlcOutputsFcnOfS16B3>\
+if (%<(SLibCGIRIsSampleHit(2, 16))>) {
+    nlcemu1suv = look1_binlxpw(rtB.eeui10qss5[7], rtP.uDLookupTable_bp01Data, rtP.uDLookupTable_tableData, 3U);
+    b0v2g4lngi = look1_binlxpw(rtB.eeui10qss5[9], rtP.uDLookupTable1_bp01Data, rtP.uDLookupTable1_tableData, 3U);
+}
+if (%<(SLibCGIRIsSampleHit(5, 16))>) {
+    rtB.icztboyzhv = look1_binlxpw(rtB.g4tbv42gvs, rtP.uDLookupTable2_bp01Data, rtP.uDLookupTable2_tableData, 3U);
+}
+rtB.drkjarmmwq = rtP.Gainacceltorque_Value * rtB.h5pz2kwaqj;
+rtB.l15a43fhau = rtP.Gain_Gain_ijzcfhvqay * rtB.dgvwcf01rl;
+if (%<(SLibCGIRIsSampleHit(2, 16))>) {
+    rtB.oqfxjcuozu = nlcemu1suv * b0v2g4lngi * rtB.icztboyzhv;
+}
+rtB.cbkm4kaxtz = rtB.l15a43fhau * rtB.oqfxjcuozu;
+rtB.nuwerkcckz = rtB.drkjarmmwq + rtB.cbkm4kaxtz;
+if (%<(SLibCGIRIsSampleHit(2, 16))>) {
+    nlcemu1suv = rtP.Gain1_Gain_kjbrtpy3g1 * rtB.eeui10qss5[7];
+    nlcemu1suv = rtP.motor_inducer_Gain * nlcemu1suv * rtP.Tireradius_Gain;
+    rtB.aqzmzihuiq = nlcemu1suv * nlcemu1suv * rtB.g0o2dkrvgq * rtP.Tireradius1_Gain * rtP.motor_inducer1_Gain;
+}
+rtB.dywawpl2pz = rtB.nuwerkcckz - rtB.aqzmzihuiq;
+if (rtB.dywawpl2pz > rtP.SaturationMotorTorqueLimits_UpperSat) {
+    rtB.fqkkavvvvo = rtP.SaturationMotorTorqueLimits_UpperSat;
+} else if (rtB.dywawpl2pz < rtP.SaturationMotorTorqueLimits_LowerSat) {
+    rtB.fqkkavvvvo = rtP.SaturationMotorTorqueLimits_LowerSat;
+} else {
+    rtB.fqkkavvvvo = rtB.dywawpl2pz;
+}
+if (%<(SLibCGIRIsSampleHit(2, 17))>) {
+    rtB.kxkxwq43zp = rtP.Gain4_Gain_mtrijy34m3 * rtB.eeui10qss5[7];
+}
+rtB.bc4tcb2dep = rtB.cu2xqvatbs * rtB.kxkxwq43zp;
+rtB.f0luu0fdta = rtP.Gain5_Gain_k5hkbhhf1u * rtB.bc4tcb2dep;
+rtB.mxihbup2dp = rtB.f0luu0fdta / rtB.eeui10qss5[9];
+if (%<(SLibCGIRIsSampleHit(2, 17))>) {
+    nlcemu1suv = rtB.eeui10qss5[11] - rtB.eeui10qss5[10];
+    anyInputSizeChanged = false;
+    i = 0;
+    exitg1 = false;
+    while ((!exitg1) && (i < 8)) {
+        if (rtDW.n0efgff5hp.inputVarSize.f1[i] != 1U) {
+            anyInputSizeChanged = true;
+            for (i = 0; i < 8; i++) {
+                rtDW.n0efgff5hp.inputVarSize.f1[i] = 1U;
+            }
+            exitg1 = true;
+        } else {
+            i++;
+        }
+    }
+    if (anyInputSizeChanged && (rtDW.n0efgff5hp.NumChannels == -1)) {
+        rtDW.n0efgff5hp.NumChannels = 1;
+    }
+    obj = rtDW.n0efgff5hp.FilterObj;
+    if (rtDW.n0efgff5hp.FilterObj->isInitialized != 1) {
+        rtDW.n0efgff5hp.FilterObj->isSetupComplete = false;
+        rtDW.n0efgff5hp.FilterObj->isInitialized = 1;
+        rtDW.n0efgff5hp.FilterObj->isSetupComplete = true;
+        /* System object Initialization function: dsp.FIRFilter */
+        for (i = 0; i < 558; i++) {
+            rtDW.n0efgff5hp.FilterObj->cSFunObject.W0_states[i] = rtDW.n0efgff5hp.FilterObj->cSFunObject.P0_InitialStates;
+        }
+    }
+    /* System object Outputs function: dsp.FIRFilter */
+    /* Reverse the coefficients */
+    for (i = 0; i < 559; i++) {
+        obj->cSFunObject.W2_simRevCoeff[558 - i] = obj->cSFunObject.P1_Coefficients[i];
+    }
+    /* Reverse copy the states from States_Dwork to ContextBuff_Dwork */
+    for (i = 0; i < 558; i++) {
+        obj->cSFunObject.W1_simContextBuf[557 - i] = obj->cSFunObject.W0_states[i];
+    }
+    /* Copy the initial part of input to ContextBuff_Dwork */
+    obj->cSFunObject.W1_simContextBuf[558] = nlcemu1suv;
+    d43xrwflyk = 0.0;
+    for (i = 0; i < 559; i++) {
+        d43xrwflyk += obj->cSFunObject.W2_simRevCoeff[i] * obj->cSFunObject.W1_simContextBuf[i];
+    }
+    /* store output sample */
+    /* Shift state buffer when input buffer is shorter than state buffer */
+    for (idx = 556; idx >= 0; idx--) {
+        obj->cSFunObject.W0_states[idx + 1] = obj->cSFunObject.W0_states[idx];
+    }
+    /* Reverse copy the states from input to States_Dwork */
+    obj->cSFunObject.W0_states[0] = nlcemu1suv;
+    rtB.gzzvnq20dn = d43xrwflyk;
+    rtB.cx3ymv4x24 = muDoubleScalarAbs(rtB.gzzvnq20dn);
+}
+                            {
+
+
+            {
+                const char *errMsg = (NULL);
+
+                void * excelLoader = (void *) rtDW.mqxteia35p.ExcelLoader;
+                void * TempDoubleOutput = (void *) &rtDW.pu5mqsgb31.TempDoubleOutput;
+                if (excelLoader != (NULL) && (%<(LibIsMajorTimeStep())> || !0) ) {
+                    void *y = &rtB.kumsfxtfj0;
+                    real_T t = %<(LibGetTaskTimeFromTIDWrapper(17, 17))>;
+                    errMsg = rtwExcelLoaderGetOutputSinceR2024b(&TempDoubleOutput,excelLoader,t, %<(LibIsMajorTimeStep())>, 0.0
+                    );
+
+                    if (errMsg != (NULL)) {
+                        %<(RTMSetErrStat("errMsg"))>;
+                        return;
+                    }
+
+            rtB.kumsfxtfj0 = rtDW.pu5mqsgb31.TempDoubleOutput;
+
+                }
+
+            }
+
+    }
+
+%<tlcOutputsFcnOfS17B18>\
+if (%<(SLibCGIRIsSampleHit(2, 17))>) {
+%<tlcOutputsFcnOfS17B19>\
+%<tlcOutputsFcnOfS17B26>\
+%<tlcOutputsFcnOfS17B29>\
+    if (%<(SLibCGIRIsSampleHit(3, 17))>) {
+        rtDW.h35raj45tn[0] = rtB.eeui10qss5[2];
+        rtDW.h35raj45tn[1] = rtB.eeui10qss5[1];
+    }
+}
+if (%<(SLibCGIRIsSampleHit(3, 17))>) {
+    rtB.fglunecdxt[0] = rtDW.h35raj45tn[0];
+    rtB.fglunecdxt[1] = rtDW.h35raj45tn[1];
+}
+if (%<(SLibCGIRIsSampleHit(4, 17))>) {
+    pbcdxwb11j = muDoubleScalarMod(rtP.PMSMFieldOrientedControl_p * rtB.fglunecdxt[1], rtP.upi_Value);
+    dtb00zpiry = pbcdxwb11j + rtP.Bias_Bias;
+    ha2k10fcke = rtP.Gain_Gain_frefn1yrum * rtB.eeui10qss5[9];
+    afqdkvwkdg = rtP.PMSMFieldOrientedControl_p * rtB.fglunecdxt[0];
+    p3bfahgcvs = 1.0 / rtP.PMSMFieldOrientedControl_p * afqdkvwkdg;
+    pmfpu0atq5 = muDoubleScalarAbs(p3bfahgcvs);
+    lx3cfivdao = 1.0 / rtP.PMSMFieldOrientedControl_Vnom * rtB.eeui10qss5[9];
+    nlcemu1suv = rtP.PMSMFieldOrientedControl_Pmax / rtP.PMSMFieldOrientedControl_Tmax;
+    if (pmfpu0atq5 > rtP.Saturation_UpperSat) {
+        nlcemu1suv = rtP.Saturation_UpperSat;
+    } else if (!(pmfpu0atq5 < nlcemu1suv)) {
+        nlcemu1suv = pmfpu0atq5;
+    }
+    lx3cfivdao *= muDoubleScalarMin(1.0 / nlcemu1suv * rtP.PMSMFieldOrientedControl_Pmax, rtP.PMSMFieldOrientedControl_Tmax);
+}
+if (%<(SLibCG_SE(SLibCGIRIsSampleHit(1, 17)))> && %<(SLibCG_SE(SLibCGIRIsSampleHit(3, 17)))>) {
+    rtDW.d3h324s2gz = rtB.cu2xqvatbs;
+}
+if (%<(SLibCGIRIsSampleHit(3, 17))>) {
+    rtB.a14gtbi5kg = rtDW.d3h324s2gz;
+}
+if (%<(SLibCGIRIsSampleHit(4, 17))>) {
+    itsm54usro = rtB.a14gtbi5kg * rtP.Zerocancellationomega_NumCoef / rtP.Zerocancellationomega_DenCoef - p3bfahgcvs;
+    if ((rtP.Constant_Value_hfrpsxdyrr > 0.0) && (rtDW.hhjcusw3kr <= 0)) {
+        rtDW.aiuj3n14l2 = rtB.pad5qpr4zh;
+        if (rtDW.aiuj3n14l2 > rtP.Integrator_UpperSat) {
+            rtDW.aiuj3n14l2 = rtP.Integrator_UpperSat;
+        } else if (rtDW.aiuj3n14l2 < rtP.Integrator_LowerSat) {
+            rtDW.aiuj3n14l2 = rtP.Integrator_LowerSat;
+        }
+    }
+    rtB.acrcvhskd3 = (rtP.VelocityController_Ki_w * itsm54usro + rtP.VelocityController_Kaw_w * rtDW.gqluv13bkw) * rtP.Integrator_gainval + rtDW.aiuj3n14l2;
+    if (rtB.acrcvhskd3 > rtP.Integrator_UpperSat) {
+        rtB.acrcvhskd3 = rtP.Integrator_UpperSat;
+    } else if (rtB.acrcvhskd3 < rtP.Integrator_LowerSat) {
+        rtB.acrcvhskd3 = rtP.Integrator_LowerSat;
+    }
+    if (rtP.VelocityController_CtrlType < rtP.CompareToConstant_const_klia4ky43d) {
+        if (rtB.acrcvhskd3 > rtP.Saturation_UpperSat_gygqjzvq1r) {
+            akmfgydsr1 = rtP.Saturation_UpperSat_gygqjzvq1r;
+        } else if (rtB.acrcvhskd3 < rtP.Saturation_LowerSat) {
+            akmfgydsr1 = rtP.Saturation_LowerSat;
+        } else {
+            akmfgydsr1 = rtB.acrcvhskd3;
+        }
+        itsm54usro = rtP.VelocityController_Kp_w * itsm54usro + akmfgydsr1;
+    } else {
+        if (rtB.acrcvhskd3 > rtP.Saturation_UpperSat_gygqjzvq1r) {
+            akmfgydsr1 = rtP.Saturation_UpperSat_gygqjzvq1r;
+        } else if (rtB.acrcvhskd3 < rtP.Saturation_LowerSat) {
+            akmfgydsr1 = rtP.Saturation_LowerSat;
+        } else {
+            akmfgydsr1 = rtB.acrcvhskd3;
+        }
+        itsm54usro = ((rtP.VelocityController_Kp_w * itsm54usro + akmfgydsr1) - p3bfahgcvs) * rtP.Kv_w_Gain;
+    }
+    if (rtP.PMSMFieldOrientedControl_CtrlMode > rtP.Switch_Threshold) {
+        p3bfahgcvs = rtB.a14gtbi5kg;
+    } else {
+        p3bfahgcvs = itsm54usro;
+    }
+    if (p3bfahgcvs > lx3cfivdao) {
+        rtB.fxujksop5d = lx3cfivdao;
+    } else {
+        lx3cfivdao *= rtP.SignChange_Gain_m4pc2hclyi;
+        if (p3bfahgcvs < lx3cfivdao) {
+            rtB.fxujksop5d = lx3cfivdao;
+        } else {
+            rtB.fxujksop5d = p3bfahgcvs;
+        }
+    }
+    if (rtP.Constant_Value_knvcyyaru3 >= rtP.Switch_Threshold_c5mcidh4e4) {
+        dw0lxktmyz_idx_0 = rtP.idRef_Value;
+        dw0lxktmyz_idx_1 = 2.0 / (3.0 * rtP.PMSMFieldOrientedControl_p * rtP.PMSMFieldOrientedControl_psim) * rtB.fxujksop5d;
+    } else {
+        pmfpu0atq5 *= rtP.radsrpm_Gain;
+        bpIndices[0U] = plook_binx(pmfpu0atq5, rtP.LookupTableidreference_bp01Data, 1U, &p3bfahgcvs);
+        nleazrv5th[0U] = p3bfahgcvs;
+        bpIndices[1U] = plook_binx(rtB.fxujksop5d, rtP.LookupTableidreference_bp02Data, 2U, &p3bfahgcvs);
+        nleazrv5th[1U] = p3bfahgcvs;
+        bpIndices[2U] = plook_binx(rtB.eeui10qss5[9], rtP.LookupTableidreference_bp03Data, 1U, &p3bfahgcvs);
+        nleazrv5th[2U] = p3bfahgcvs;
+        bpIndices_p[0U] = plook_binx(pmfpu0atq5, rtP.LookupTableiqreference_bp01Data, 1U, &p3bfahgcvs);
+        fractions[0U] = p3bfahgcvs;
+        bpIndices_p[1U] = plook_binx(rtB.fxujksop5d, rtP.LookupTableiqreference_bp02Data, 2U, &p3bfahgcvs);
+        fractions[1U] = p3bfahgcvs;
+        bpIndices_p[2U] = plook_binx(rtB.eeui10qss5[9], rtP.LookupTableiqreference_bp03Data, 1U, &p3bfahgcvs);
+        fractions[2U] = p3bfahgcvs;
+        dw0lxktmyz_idx_0 = intrp3d_l_pw(bpIndices, nleazrv5th, rtP.LookupTableidreference_tableData, rtP.LookupTableidreference_dimSizes);
+        dw0lxktmyz_idx_1 = intrp3d_l_pw(bpIndices_p, fractions, rtP.LookupTableiqreference_tableData, rtP.LookupTableiqreference_dimSizes);
+    }
+    akmfgydsr1 = dw0lxktmyz_idx_0 * rtP.Zerocancellationid_NumCoef / rtP.Zerocancellationid_DenCoef;
+    ged32k4led = dw0lxktmyz_idx_1 * rtP.Zerocancellationiq_NumCoef / rtP.Zerocancellationiq_DenCoef;
+    if (rtP.PMSMCurrentControllerwithPreControl_ActFF > rtP.Switch_Threshold_lu2m33nulr) {
+        dw0lxktmyz_idx_0 = ged32k4led * look2_binlcpw(akmfgydsr1, ged32k4led, rtP.PMSMCurrentControllerwithPreControl_idVect, rtP.PMSMCurrentControllerwithPreControl_iqVect, rtP.PMSMCurrentControllerwithPreControl_LqMatrix, rtP.uDLookupTableLq_maxIndex, 2U) * afqdkvwkdg;
+        dw0lxktmyz_idx_1 = akmfgydsr1 * look2_binlcapw(akmfgydsr1, ged32k4led, rtP.PMSMCurrentControllerwithPreControl_idVect, rtP.PMSMCurrentControllerwithPreControl_iqVect, rtP.PMSMCurrentControllerwithPreControl_LdMatrix, rtP.uDLookupTableLd_maxIndex, 2U) * afqdkvwkdg + look2_binlcpw(akmfgydsr1, ged32k4led, rtP.PMSMCurrentControllerwithPreControl_idVect, rtP.PMSMCurrentControllerwithPreControl_iqVect, rtP.PMSMCurrentControllerwithPreControl_psimMatrix, rtP.uDLookupTablePsim_maxIndex, 2U) * afqdkvwkdg;
+    } else {
+        dw0lxktmyz_idx_0 = rtP.Zerovector_Value_n5mdnjhzfs[0];
+        dw0lxktmyz_idx_1 = rtP.Zerovector_Value_n5mdnjhzfs[1];
+    }
+    casilp04mc = rtDW.i0ctvtpqv4;
+}
+if (%<(SLibCG_SE(SLibCGIRIsSampleHit(2, 17)))> && %<(SLibCG_SE(SLibCGIRIsSampleHit(3, 17)))>) {
+    rtDW.okeoouzo1o[0] = rtB.eeui10qss5[4];
+    rtDW.okeoouzo1o[1] = rtB.eeui10qss5[5];
+    rtDW.okeoouzo1o[2] = rtB.eeui10qss5[6];
+}
+if (%<(SLibCGIRIsSampleHit(3, 17))>) {
+    rtB.ltrtswi0k3[0] = rtDW.okeoouzo1o[0];
+    rtB.ltrtswi0k3[1] = rtDW.okeoouzo1o[1];
+    rtB.ltrtswi0k3[2] = rtDW.okeoouzo1o[2];
+}
+if (%<(SLibCGIRIsSampleHit(4, 17))>) {
+    nleazrv5th[1] = ((muDoubleScalarCos(dtb00zpiry - 2.0943951023931953) * rtB.ltrtswi0k3[1] + muDoubleScalarCos(dtb00zpiry) * rtB.ltrtswi0k3[0]) + muDoubleScalarCos(dtb00zpiry + 2.0943951023931953) * rtB.ltrtswi0k3[2]) * rtP.Gain1_Gain_lqahak0rfg;
+    dtb00zpiry = akmfgydsr1 - ((muDoubleScalarSin(dtb00zpiry - 2.0943951023931953) * rtB.ltrtswi0k3[1] + muDoubleScalarSin(dtb00zpiry) * rtB.ltrtswi0k3[0]) + muDoubleScalarSin(dtb00zpiry + 2.0943951023931953) * rtB.ltrtswi0k3[2]) * rtP.Gain1_Gain_lqahak0rfg;
+    if ((rtP.Constant_Value_ixojzknnn3 > 0.0) && (rtDW.bx3tm5qc5k <= 0)) {
+        rtDW.dz5w1ldcfc = rtB.nyp0b3xr0p;
+        if (rtDW.dz5w1ldcfc > rtP.Integrator_UpperSat_kl1hm1xihq) {
+            rtDW.dz5w1ldcfc = rtP.Integrator_UpperSat_kl1hm1xihq;
+        } else if (rtDW.dz5w1ldcfc < rtP.Integrator_LowerSat_e0zgrt502b) {
+            rtDW.dz5w1ldcfc = rtP.Integrator_LowerSat_e0zgrt502b;
+        }
+    }
+    rtB.jiftledqxn = (rtP.PMSMFieldOrientedControl_Ki_id * dtb00zpiry + rtP.PMSMFieldOrientedControl_Kaw_id * casilp04mc) * rtP.Integrator_gainval_pqhlxf5uli + rtDW.dz5w1ldcfc;
+    if (rtB.jiftledqxn > rtP.Integrator_UpperSat_kl1hm1xihq) {
+        rtB.jiftledqxn = rtP.Integrator_UpperSat_kl1hm1xihq;
+    } else if (rtB.jiftledqxn < rtP.Integrator_LowerSat_e0zgrt502b) {
+        rtB.jiftledqxn = rtP.Integrator_LowerSat_e0zgrt502b;
+    }
+    afqdkvwkdg = ged32k4led - nleazrv5th[1];
+    if ((rtP.Constant_Value_ixojzknnn3 > 0.0) && (rtDW.iy3tsoo445 <= 0)) {
+        rtDW.ioz4i0cogy = rtB.j5tv3mr3kb;
+        if (rtDW.ioz4i0cogy > rtP.Integrator_UpperSat_a5uo2vq1ve) {
+            rtDW.ioz4i0cogy = rtP.Integrator_UpperSat_a5uo2vq1ve;
+        } else if (rtDW.ioz4i0cogy < rtP.Integrator_LowerSat_amsvttoka5) {
+            rtDW.ioz4i0cogy = rtP.Integrator_LowerSat_amsvttoka5;
+        }
+    }
+    rtB.lbsaqr5ept = (rtP.PMSMFieldOrientedControl_Ki_iq * afqdkvwkdg + rtP.PMSMFieldOrientedControl_Kaw_iq * rtDW.agggw4jnlr) * rtP.Integrator_gainval_m4a4x23zyj + rtDW.ioz4i0cogy;
+    if (rtB.lbsaqr5ept > rtP.Integrator_UpperSat_a5uo2vq1ve) {
+        rtB.lbsaqr5ept = rtP.Integrator_UpperSat_a5uo2vq1ve;
+    } else if (rtB.lbsaqr5ept < rtP.Integrator_LowerSat_amsvttoka5) {
+        rtB.lbsaqr5ept = rtP.Integrator_LowerSat_amsvttoka5;
+    }
+    if (rtB.jiftledqxn > rtP.Saturation_UpperSat_oobvmxfexh) {
+        akmfgydsr1 = rtP.Saturation_UpperSat_oobvmxfexh;
+    } else if (rtB.jiftledqxn < rtP.Saturation_LowerSat_pbrxmbz310) {
+        akmfgydsr1 = rtP.Saturation_LowerSat_pbrxmbz310;
+    } else {
+        akmfgydsr1 = rtB.jiftledqxn;
+    }
+    ged32k4led = (rtP.PMSMFieldOrientedControl_Kp_id * dtb00zpiry + akmfgydsr1) - dw0lxktmyz_idx_0;
+    if (rtB.lbsaqr5ept > rtP.Saturation_UpperSat_of3vok5wll) {
+        akmfgydsr1 = rtP.Saturation_UpperSat_of3vok5wll;
+    } else if (rtB.lbsaqr5ept < rtP.Saturation_LowerSat_dqgtbcek0x) {
+        akmfgydsr1 = rtP.Saturation_LowerSat_dqgtbcek0x;
+    } else {
+        akmfgydsr1 = rtB.lbsaqr5ept;
+    }
+    dtb00zpiry = (rtP.PMSMFieldOrientedControl_Kp_iq * afqdkvwkdg + akmfgydsr1) + dw0lxktmyz_idx_1;
+    if (rtP.dqVoltageLimiter_AxisPrio == rtP.CompareToConstant_const) {
+        afqdkvwkdg = ged32k4led;
+    } else {
+        afqdkvwkdg = dtb00zpiry;
+    }
+    if (afqdkvwkdg > ha2k10fcke) {
+        afqdkvwkdg = ha2k10fcke;
+    } else {
+        akmfgydsr1 = rtP.SignChange_Gain * ha2k10fcke;
+        if (afqdkvwkdg < akmfgydsr1) {
+            afqdkvwkdg = akmfgydsr1;
+        }
+    }
+    akmfgydsr1 = muDoubleScalarSqrt(ha2k10fcke * ha2k10fcke - afqdkvwkdg * afqdkvwkdg);
+    if (rtP.dqVoltageLimiter_AxisPrio == rtP.CompareToConstant_const_bpll4lahwo) {
+        pmfpu0atq5 = dtb00zpiry;
+    } else {
+        pmfpu0atq5 = ged32k4led;
+    }
+    if (!(pmfpu0atq5 > akmfgydsr1)) {
+        akmfgydsr1 *= rtP.SignChange_Gain_nkgtgrcz2r;
+        if (!(pmfpu0atq5 < akmfgydsr1)) {
+            akmfgydsr1 = pmfpu0atq5;
+        }
+    }
+    pmfpu0atq5 = muDoubleScalarSqrt(ged32k4led * ged32k4led + dtb00zpiry * dtb00zpiry);
+    if (pmfpu0atq5 > rtP.Switch_Threshold_prka2tgstj) {
+        p3bfahgcvs = pmfpu0atq5;
+    } else {
+        p3bfahgcvs = rtP.Constant1_Value_p3yd1lj0ow;
+    }
+    switch ((int32_T)rtP.dqVoltageLimiter_AxisPrio) {
+      case 1:
+        pmfpu0atq5 = akmfgydsr1;
+        break;
+      case 2:
+        pmfpu0atq5 = afqdkvwkdg;
+        break;
+      default:
+        pmfpu0atq5 = ha2k10fcke * muDoubleScalarAbs(dtb00zpiry) / p3bfahgcvs;
+        if (!(dtb00zpiry > pmfpu0atq5)) {
+            pmfpu0atq5 *= rtP.Gain_Gain;
+            if (!(dtb00zpiry < pmfpu0atq5)) {
+                pmfpu0atq5 = dtb00zpiry;
+            }
+        }
+        break;
+    }
+    rtB.eftnfnprns = pmfpu0atq5 - dtb00zpiry;
+    switch ((int32_T)rtP.dqVoltageLimiter_AxisPrio) {
+      case 1:
+        break;
+      case 2:
+        afqdkvwkdg = akmfgydsr1;
+        break;
+      default:
+        afqdkvwkdg = ha2k10fcke * muDoubleScalarAbs(ged32k4led) / p3bfahgcvs;
+        if (!(ged32k4led > afqdkvwkdg)) {
+            ha2k10fcke = rtP.Gain1_Gain * afqdkvwkdg;
+            if (ged32k4led < ha2k10fcke) {
+                afqdkvwkdg = ha2k10fcke;
+            } else {
+                afqdkvwkdg = ged32k4led;
+            }
+        }
+        break;
+    }
+    rtB.iy0jz4ur2w = afqdkvwkdg - ged32k4led;
+    ha2k10fcke = rtB.eeui10qss5[9];
+    rtDW.epji3v1ui3 = ((ha2k10fcke >= rtP.PMSMFieldOrientedControl_Vdc_on) || ((!(ha2k10fcke <= 0.5 * rtP.PMSMFieldOrientedControl_Vdc_on)) && rtDW.epji3v1ui3));
+    if (rtDW.epji3v1ui3) {
+        rtB.o3qdjplqtp = rtP.Relay_YOn;
+    } else {
+        rtB.o3qdjplqtp = rtP.Relay_YOff;
+    }
+    rtB.erpqcs02jx = rtB.fxujksop5d - itsm54usro;
+    nleazrv5th[0] = ((muDoubleScalarSin(pbcdxwb11j) * afqdkvwkdg + muDoubleScalarCos(pbcdxwb11j) * pmfpu0atq5) + rtP.Constant_Value_g3yno1hwdp) * rtP.Gain1_Gain_djm21ep0jz;
+    nleazrv5th[1] = ((muDoubleScalarSin(pbcdxwb11j - 2.0943951023931953) * afqdkvwkdg + muDoubleScalarCos(pbcdxwb11j - 2.0943951023931953) * pmfpu0atq5) + rtP.Constant_Value_g3yno1hwdp) * rtP.Gain1_Gain_djm21ep0jz;
+    nleazrv5th[2] = ((muDoubleScalarSin(pbcdxwb11j + 2.0943951023931953) * afqdkvwkdg + muDoubleScalarCos(pbcdxwb11j + 2.0943951023931953) * pmfpu0atq5) + rtP.Constant_Value_g3yno1hwdp) * rtP.Gain1_Gain_djm21ep0jz;
+    pbcdxwb11j = rtB.eeui10qss5[9];
+    if (pbcdxwb11j > rtP.avoiddivisionby0_UpperSat) {
+        dtb00zpiry = rtP.avoiddivisionby0_UpperSat;
+    } else if (pbcdxwb11j < rtP.avoiddivisionby0_LowerSat) {
+        dtb00zpiry = rtP.avoiddivisionby0_LowerSat;
+    } else {
+        dtb00zpiry = pbcdxwb11j;
+    }
+    rtDW.lcntey2ugc = pnnwvd4cbf;
+    pbcdxwb11j = 1.0 / rtP.SwitchingTimeCalculation_fsw;
+    ha2k10fcke = 0.5 * pbcdxwb11j;
+    itsm54usro = nleazrv5th[0] * ha2k10fcke / dtb00zpiry;
+    ged32k4led = nleazrv5th[1] * ha2k10fcke / dtb00zpiry;
+    dtb00zpiry = nleazrv5th[2] * ha2k10fcke / dtb00zpiry;
+    nleazrv5th[0] = itsm54usro;
+    nleazrv5th[1] = ged32k4led;
+    nleazrv5th[2] = dtb00zpiry;
+    if (!muDoubleScalarIsNaN(itsm54usro)) {
+        idx = 1;
+    } else {
+        idx = 0;
+        i = 2;
+        exitg1 = false;
+        while ((!exitg1) && (i < 4)) {
+            if (!muDoubleScalarIsNaN(nleazrv5th[i - 1])) {
+                idx = i;
+                exitg1 = true;
+            } else {
+                i++;
+            }
+        }
+    }
+    if (idx == 0) {
+        afqdkvwkdg = itsm54usro;
+    } else {
+        afqdkvwkdg = nleazrv5th[idx - 1];
+        for (i = idx + 1; i < 4; i++) {
+            p3bfahgcvs = nleazrv5th[i - 1];
+            if (afqdkvwkdg < p3bfahgcvs) {
+                afqdkvwkdg = p3bfahgcvs;
+            }
+        }
+    }
+    if (!muDoubleScalarIsNaN(itsm54usro)) {
+        idx = 1;
+    } else {
+        idx = 0;
+        i = 2;
+        exitg1 = false;
+        while ((!exitg1) && (i < 4)) {
+            if (!muDoubleScalarIsNaN(nleazrv5th[i - 1])) {
+                idx = i;
+                exitg1 = true;
+            } else {
+                i++;
+            }
+        }
+    }
+    if (idx == 0) {
+        akmfgydsr1 = itsm54usro;
+    } else {
+        akmfgydsr1 = nleazrv5th[idx - 1];
+        for (i = idx + 1; i < 4; i++) {
+            p3bfahgcvs = nleazrv5th[i - 1];
+            if (akmfgydsr1 > p3bfahgcvs) {
+                akmfgydsr1 = p3bfahgcvs;
+            }
+        }
+    }
+    switch ((int32_T)rtP.SwitchingTimeCalculation_PWM) {
+      case 1:
+        Toffset = 0.5 * ha2k10fcke;
+        break;
+      case 2:
+        Toffset = (ha2k10fcke - (afqdkvwkdg - akmfgydsr1)) / 2.0 - akmfgydsr1;
+        break;
+      case 3:
+        if (akmfgydsr1 + afqdkvwkdg >= 0.0) {
+            Toffset = ha2k10fcke - afqdkvwkdg;
+        } else {
+            Toffset = -akmfgydsr1;
+        }
+        break;
+      case 4:
+        if ((itsm54usro == afqdkvwkdg) && (dtb00zpiry == akmfgydsr1)) {
+            Toffset = ha2k10fcke - afqdkvwkdg;
+        } else if ((ged32k4led == afqdkvwkdg) && (dtb00zpiry == akmfgydsr1)) {
+            Toffset = -akmfgydsr1;
+        } else if ((ged32k4led == afqdkvwkdg) && (itsm54usro == akmfgydsr1)) {
+            Toffset = ha2k10fcke - afqdkvwkdg;
+        } else if ((dtb00zpiry == afqdkvwkdg) && (itsm54usro == akmfgydsr1)) {
+            Toffset = -akmfgydsr1;
+        } else if ((dtb00zpiry == afqdkvwkdg) && (ged32k4led == akmfgydsr1)) {
+            Toffset = ha2k10fcke - afqdkvwkdg;
+        } else if ((itsm54usro == afqdkvwkdg) && (ged32k4led == akmfgydsr1)) {
+            Toffset = -akmfgydsr1;
+        }
+        break;
+      case 5:
+        if ((itsm54usro == afqdkvwkdg) && (dtb00zpiry == akmfgydsr1)) {
+            Toffset = -akmfgydsr1;
+        } else if ((ged32k4led == afqdkvwkdg) && (dtb00zpiry == akmfgydsr1)) {
+            Toffset = ha2k10fcke - afqdkvwkdg;
+        } else if ((ged32k4led == afqdkvwkdg) && (itsm54usro == akmfgydsr1)) {
+            Toffset = -akmfgydsr1;
+        } else if ((dtb00zpiry == afqdkvwkdg) && (itsm54usro == akmfgydsr1)) {
+            Toffset = ha2k10fcke - afqdkvwkdg;
+        } else if ((dtb00zpiry == afqdkvwkdg) && (ged32k4led == akmfgydsr1)) {
+            Toffset = -akmfgydsr1;
+        } else if ((itsm54usro == afqdkvwkdg) && (ged32k4led == akmfgydsr1)) {
+            Toffset = ha2k10fcke - afqdkvwkdg;
+        }
+        break;
+      case 6:
+        if (akmfgydsr1 + afqdkvwkdg >= 0.0) {
+            Toffset = -akmfgydsr1;
+        } else {
+            Toffset = ha2k10fcke - afqdkvwkdg;
+        }
+        break;
+      case 7:
+        Toffset = ha2k10fcke - afqdkvwkdg;
+        break;
+      case 8:
+        Toffset = -akmfgydsr1;
+        break;
+    }
+    itsm54usro += Toffset;
+    ged32k4led += Toffset;
+    akmfgydsr1 = dtb00zpiry + Toffset;
+    Toffset = ha2k10fcke - itsm54usro;
+    dtb00zpiry = ha2k10fcke - ged32k4led;
+    afqdkvwkdg = ha2k10fcke - akmfgydsr1;
+    itsm54usro += ha2k10fcke;
+    ged32k4led += ha2k10fcke;
+    akmfgydsr1 += ha2k10fcke;
+    if (Toffset < 0.0) {
+        Toffset = 0.0;
+    } else if (Toffset > ha2k10fcke) {
+        Toffset = ha2k10fcke;
+    }
+    if (dtb00zpiry < 0.0) {
+        dtb00zpiry = 0.0;
+    } else if (dtb00zpiry > ha2k10fcke) {
+        dtb00zpiry = ha2k10fcke;
+    }
+    if (afqdkvwkdg < 0.0) {
+        afqdkvwkdg = 0.0;
+    } else if (afqdkvwkdg > ha2k10fcke) {
+        afqdkvwkdg = ha2k10fcke;
+    }
+    if (itsm54usro < ha2k10fcke) {
+        itsm54usro = ha2k10fcke;
+    } else if (itsm54usro > pbcdxwb11j) {
+        itsm54usro = pbcdxwb11j;
+    }
+    if (ged32k4led < ha2k10fcke) {
+        ged32k4led = ha2k10fcke;
+    } else if (ged32k4led > pbcdxwb11j) {
+        ged32k4led = pbcdxwb11j;
+    }
+    if (akmfgydsr1 < ha2k10fcke) {
+        akmfgydsr1 = ha2k10fcke;
+    } else if (akmfgydsr1 > pbcdxwb11j) {
+        akmfgydsr1 = pbcdxwb11j;
+    }
+    rtB.lwkspdtvmk[0] = Toffset;
+    rtB.lwkspdtvmk[1] = dtb00zpiry;
+    rtB.lwkspdtvmk[2] = afqdkvwkdg;
+    rtB.l0ffynazmw[0] = itsm54usro;
+    rtB.l0ffynazmw[1] = ged32k4led;
+    rtB.l0ffynazmw[2] = akmfgydsr1;
+}
+if (%<(SLibCGIRIsSampleHit(3, 17))>) {
+%<tlcOutputsFcnOfS17B64>\
+}
+if (%<(SLibCGIRIsSampleHit(2, 17))>) {
+    dw0lxktmyz_idx_1 = rtP.rads2rpm_Gain * rtB.eeui10qss5[2];
+    if (%<(SLibCGIRIsSampleHit(3, 17))>) {
+        rtDW.eccur4arih[0] = rtP.rads2rpm_Gain * rtB.a14gtbi5kg;
+        rtDW.eccur4arih[1] = dw0lxktmyz_idx_1;
+    }
+}
+if (%<(SLibCGIRIsSampleHit(3, 17))>) {
+    rtB.kule3kys25[0] = rtDW.eccur4arih[0];
+    rtB.kule3kys25[1] = rtDW.eccur4arih[1];
+%<tlcOutputsFcnOfS17B65>\
+    if (%<(SLibCGIRIsSampleHit(4, 17))>) {
+        rtB.h5hkoq0fxb[0] = rtDW.m1edngddpr[0];
+        rtB.h5hkoq0fxb[1] = rtDW.m1edngddpr[1];
+        rtB.h5hkoq0fxb[2] = rtDW.m1edngddpr[2];
+    }
+}
+                            {
+
+
+            {
+                const char *errMsg = (NULL);
+
+                void * excelLoader = (void *) rtDW.mbhkchhdjz.ExcelLoader;
+                void * TempDoubleOutput = (void *) &rtDW.hvkp1u1ifv.TempDoubleOutput;
+                if (excelLoader != (NULL) && (%<(LibIsMajorTimeStep())> || !0) ) {
+                    void *y = &rtB.p2popahxxv;
+                    real_T t = %<(LibGetTaskTimeFromTIDWrapper(17, 66))>;
+                    errMsg = rtwExcelLoaderGetOutputSinceR2024b(&TempDoubleOutput,excelLoader,t, %<(LibIsMajorTimeStep())>, 0.0
+                    );
+
+                    if (errMsg != (NULL)) {
+                        %<(RTMSetErrStat("errMsg"))>;
+                        return;
+                    }
+
+            rtB.p2popahxxv = rtDW.hvkp1u1ifv.TempDoubleOutput;
+
+                }
+
+            }
+
+    }
+
+%<tlcOutputsFcnOfS17B67>\
+if (%<(SLibCG_SE(SLibCGIRIsSampleHit(2, 17)))> && %<(SLibCG_SE(SLibCGIRIsSampleHit(3, 17)))>) {
+    rtDW.pedrdsem5c = rtB.eeui10qss5[3];
+}
+if (%<(SLibCGIRIsSampleHit(3, 17))>) {
+    rtB.o5ybt1hp45[0] = rtB.fxujksop5d;
+    rtB.o5ybt1hp45[1] = rtDW.pedrdsem5c;
+%<tlcOutputsFcnOfS17B68>\
+}
+if (%<(SLibCGIRIsSampleHit(2, 17))>) {
+%<tlcOutputsFcnOfS17B85>\
+%<tlcOutputsFcnOfS17B86>\
+}
+%<SLibInsertSolverResetCode()>\
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 6
+%assign ::GlobalCurrentTID = 6
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+rtB.gt5an3oxwf = rtP.Gain_Gain_dggs4o5ug5 * rtP.Constant1_Value * rtP.Gain1_Gain_fghsip4s1g;
+rtB.nyp0b3xr0p = rtP.PIid_x0;
+rtB.j5tv3mr3kb = rtP.PIiq_x0;
+rtB.pad5qpr4zh = rtP.DiscretePIController_x0;
+rtB.g0o2dkrvgq = rtP.FontalArea_Gain * rtP.Airdensity_Value * rtP.dragcoefficent_Gain;
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutput6LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction
+%function OutputsFcnProtoTypeForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs0(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 6
+%assign ::GlobalCurrentTID = 6
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs1(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 3, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction

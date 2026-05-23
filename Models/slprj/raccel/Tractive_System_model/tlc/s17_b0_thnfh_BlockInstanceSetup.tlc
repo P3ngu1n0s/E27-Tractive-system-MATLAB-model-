@@ -1,0 +1,29 @@
+%implements s17_b0_thnfh_BlockInstanceSetup "C"
+
+%function BlockInstanceSetup(block, system) Output
+%% Subsystems with iterators in IR:
+%% TLC Block Registration buffer:
+%<LibAddToCommonIncludes("Tractive_System_model_2f85d999_0_simulator.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_rtp.h")>
+%<LibAddToCommonIncludes("nesl_rtw_rtp.h")>
+%<LibAddToCommonIncludes("nesl_rtw_rtp.h")>
+%<LibAddToCommonIncludes("nesl_rtw_rtp.h")>
+%<LibAddToCommonIncludes("nesl_rtw_rtp.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("Tractive_System_model_2f85d999_0_simulator.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("nesl_rtw_partitioning.h")>
+%<LibAddToCommonIncludes("Tractive_System_model_2f85d999_0_simulator.h")>
+%% END  Block Registration buffer
+%endfunction

@@ -1,0 +1,63 @@
+%implements s17_b0_thnfh_PublicModuleTypes "C"
+
+%function PublicModuleTypes(block) Output
+
+#ifndef struct_tag_CkBa76mhv98XV8XuneJjzG
+#define struct_tag_CkBa76mhv98XV8XuneJjzG
+struct tag_CkBa76mhv98XV8XuneJjzG
+{
+    int32_T S0_isInitialized;
+    real_T W0_states[558];
+    real_T W1_simContextBuf[1116];
+    real_T W2_simRevCoeff[559];
+    int32_T W3_halideSimTBBGrainSize;
+    real_T P0_InitialStates;
+    real_T P1_Coefficients[559];
+};
+#endif /* struct_tag_CkBa76mhv98XV8XuneJjzG */
+#ifndef typedef_laxvu354xg
+#define typedef_laxvu354xg
+typedef struct tag_CkBa76mhv98XV8XuneJjzG laxvu354xg;
+#endif /* typedef_laxvu354xg */
+#ifndef struct_tag_uafSikpEoU5HXmNmrdnCNG
+#define struct_tag_uafSikpEoU5HXmNmrdnCNG
+struct tag_uafSikpEoU5HXmNmrdnCNG
+{
+    int32_T isInitialized;
+    boolean_T isSetupComplete;
+    laxvu354xg cSFunObject;
+};
+#endif /* struct_tag_uafSikpEoU5HXmNmrdnCNG */
+#ifndef typedef_jm4mdfzny3
+#define typedef_jm4mdfzny3
+typedef struct tag_uafSikpEoU5HXmNmrdnCNG jm4mdfzny3;
+#endif /* typedef_jm4mdfzny3 */
+#ifndef struct_tag_BlgwLpgj2bjudmbmVKWwDE
+#define struct_tag_BlgwLpgj2bjudmbmVKWwDE
+struct tag_BlgwLpgj2bjudmbmVKWwDE
+{
+    uint32_T f1[8];
+};
+#endif /* struct_tag_BlgwLpgj2bjudmbmVKWwDE */
+#ifndef typedef_o3wex1nfk3
+#define typedef_o3wex1nfk3
+typedef struct tag_BlgwLpgj2bjudmbmVKWwDE o3wex1nfk3;
+#endif /* typedef_o3wex1nfk3 */
+#ifndef struct_tag_PyrieU4BGWsbTN39BsSJ1
+#define struct_tag_PyrieU4BGWsbTN39BsSJ1
+struct tag_PyrieU4BGWsbTN39BsSJ1
+{
+    boolean_T matlabCodegenIsDeleted;
+    int32_T isInitialized;
+    boolean_T isSetupComplete;
+    o3wex1nfk3 inputVarSize;
+    int32_T NumChannels;
+    jm4mdfzny3 *FilterObj;
+    jm4mdfzny3 coder_buffer_pobj0;
+};
+#endif /* struct_tag_PyrieU4BGWsbTN39BsSJ1 */
+#ifndef typedef_bwlqen0skg
+#define typedef_bwlqen0skg
+typedef struct tag_PyrieU4BGWsbTN39BsSJ1 bwlqen0skg;
+#endif /* typedef_bwlqen0skg */
+%endfunction

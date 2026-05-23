@@ -1,0 +1,115 @@
+%implements s17_b0_thnfh_Update "C"
+
+%function UpdateForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%<SLibCGIRAccessLocalDWork(75, 0)> %% oakqpinkq5
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+PmRealVector inputs;
+PmRealVector states;
+char *msg;
+boolean_T tmp;
+%closefile localVarDecl
+if (%<(SLibCGIRIsSampleHit(3, 17))>) {
+    rtDW.ehai3ckfo3 += rtP.DiscreteTimeIntegrator1_gainval * rtP.Constant2_Value;
+    rtDW.gsfiakcjqc = (int8_T)rtB.pn0tswv4x1;
+}
+if (%<(SLibCGIRIsSampleHit(4, 17))>) {
+    rtDW.cswqu4ghej[0] = rtB.lwkspdtvmk[0];
+    rtDW.cs0riggyvy[0] = rtB.l0ffynazmw[0];
+    rtDW.cswqu4ghej[1] = rtB.lwkspdtvmk[1];
+    rtDW.cs0riggyvy[1] = rtB.l0ffynazmw[1];
+    rtDW.cswqu4ghej[2] = rtB.lwkspdtvmk[2];
+    rtDW.cs0riggyvy[2] = rtB.l0ffynazmw[2];
+    rtDW.jhw3wgd2b0 = rtB.o3qdjplqtp;
+}
+if (%<(SLibCGIRIsSampleHit(2, 17))>) {
+    inputs.mN = 6;
+    inputs.mX = &rtDW.p22rgfhj0y[0];
+    rtDW.p22rgfhj0y[0] = rtB.cmpgwjtlcv[0];
+    rtDW.p22rgfhj0y[1] = rtB.efpkncmiww[0];
+    rtDW.p22rgfhj0y[2] = rtB.mdduc30f5v[0];
+    rtDW.p22rgfhj0y[3] = rtB.osynn2uznf[0];
+    rtDW.p22rgfhj0y[4] = rtB.n3rbbklgr3[0];
+    rtDW.p22rgfhj0y[5] = rtB.c4zmsxsnjp[0];
+    states.mN = 7054;
+    states.mX = &rtDW.m3ak3zwrdi[0];
+    tmp = partitioning_check((const Simulator *)rtDW.hipi5bfdiw, &inputs, &states, %<(LibGetT())>, (NeuDiagnosticManager *)rtDW.elqjayf431);
+    if (tmp) {
+        tmp = error_buffer_is_empty(%<(LibGetRTModelErrorStatus())>);
+        if (tmp) {
+            msg = rtw_diagnostics_msg((const NeuDiagnosticTree *)rtDW.oluuhklf53);
+            %<(LibSetRTModelErrorStatus("msg"))>;
+        }
+    }
+    rtDW.dirb5tawjj = rtB.pywhdsmlex;
+}
+for (oakqpinkq5 = 0; oakqpinkq5 < 1; oakqpinkq5++) {
+    if (%<(SLibCGIRIsSampleHit(5, 13))>) {
+        rtDW.nchejrqkqc[oakqpinkq5].og0pkawmy5 = 0U;
+        rtDW.nchejrqkqc[oakqpinkq5].nv30ay1f1i += rtP.nchejrqkqc.Integrator_gainval * rtB.nchejrqkqc[oakqpinkq5].hzltjccv1x;
+    }
+}
+if (%<(SLibCGIRIsSampleHit(4, 17))>) {
+    rtDW.gqluv13bkw = rtB.erpqcs02jx;
+    rtDW.aiuj3n14l2 = rtB.acrcvhskd3;
+    if (rtP.Constant_Value_hfrpsxdyrr > 0.0) {
+        rtDW.hhjcusw3kr = 1;
+    } else if (rtP.Constant_Value_hfrpsxdyrr < 0.0) {
+        rtDW.hhjcusw3kr = -1;
+    } else if (rtP.Constant_Value_hfrpsxdyrr == 0.0) {
+        rtDW.hhjcusw3kr = 0;
+    } else {
+        rtDW.hhjcusw3kr = 2;
+    }
+    rtDW.i0ctvtpqv4 = rtB.iy0jz4ur2w;
+    rtDW.dz5w1ldcfc = rtB.jiftledqxn;
+    if (rtP.Constant_Value_ixojzknnn3 > 0.0) {
+        rtDW.bx3tm5qc5k = 1;
+        rtDW.iy3tsoo445 = 1;
+    } else if (rtP.Constant_Value_ixojzknnn3 < 0.0) {
+        rtDW.bx3tm5qc5k = -1;
+        rtDW.iy3tsoo445 = -1;
+    } else if (rtP.Constant_Value_ixojzknnn3 == 0.0) {
+        rtDW.bx3tm5qc5k = 0;
+        rtDW.iy3tsoo445 = 0;
+    } else {
+        rtDW.bx3tm5qc5k = 2;
+        rtDW.iy3tsoo445 = 2;
+    }
+    rtDW.agggw4jnlr = rtB.eftnfnprns;
+    rtDW.ioz4i0cogy = rtB.lbsaqr5ept;
+    rtDW.m1edngddpr[0] = rtB.ltrtswi0k3[0];
+    rtDW.m1edngddpr[1] = rtB.ltrtswi0k3[1];
+    rtDW.m1edngddpr[2] = rtB.ltrtswi0k3[2];
+}
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedUpdateLocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 6
+%assign ::GlobalCurrentTID = 6
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction
+%function UpdateFcnProtoTypeForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Update0(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 4, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 6
+%assign ::GlobalCurrentTID = 6
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction

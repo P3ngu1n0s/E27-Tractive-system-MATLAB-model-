@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/slsa_mm_param_rtp/R2023a">
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="2c8b5558-3856-4ef7-a337-703948770483">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/PWM/PWM Generator (Three-phase, Two-level)/Gate Signal Generator/Constant3</blockPath>
+    <name>Value</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="2ec92279-fcfe-48b3-a737-3beff97966b1"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="a1b04874-7146-40cd-ace1-d20c123acf19">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="6e3bba2a-32fe-4c54-8624-81ae88bb6a2d"/>
+    <valueIndices>201</valueIndices>
+    <valueIndices>201</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="59752efb-48af-4f58-be9f-533afb54a50d">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/PWM/Inverse Park Transform/Gain1</blockPath>
+    <name>Gain</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="6e3bba2a-32fe-4c54-8624-81ae88bb6a2d"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="6e3bba2a-32fe-4c54-8624-81ae88bb6a2d">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="59752efb-48af-4f58-be9f-533afb54a50d"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="a1b04874-7146-40cd-ace1-d20c123acf19"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="de9d8e95-6853-45b5-a223-0359700c5742">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control/PI iq/Integrator (Discrete or Continuous)/Discrete/Saturation</blockPath>
+    <name>LowerLimit</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="737ef134-6a7e-4673-914f-9e0b9c4d4428"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="737ef134-6a7e-4673-914f-9e0b9c4d4428">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="de9d8e95-6853-45b5-a223-0359700c5742"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="0f56458a-721f-4af3-bf51-5c0324cd275a"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="17cabfaf-dada-40a9-8340-e4bb078419d5">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="747b11d1-1774-4251-b6f0-3ff33e2bdd12"/>
+    <valueIndices>193</valueIndices>
+    <valueIndices>193</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="a40b82bf-794f-420e-845d-dc0fcae3c0e0">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control/PI id/Integrator (Discrete or Continuous)/Discrete/Saturation</blockPath>
+    <name>LowerLimit</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="4f6eac48-e37b-44e4-b961-66e320099d42"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="4f6eac48-e37b-44e4-b961-66e320099d42">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="a40b82bf-794f-420e-845d-dc0fcae3c0e0"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="947ada11-4286-4a12-b58b-52c343a8e45d"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="b4cb454b-a2be-42f7-adaf-68fb7adc208e">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="e6e3bb72-1751-4a65-b8a7-9126c4b842e4"/>
+    <valueIndices>189</valueIndices>
+    <valueIndices>189</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="e6e3bb72-1751-4a65-b8a7-9126c4b842e4">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="531b19dd-6165-4c59-9b26-a9c062e1bcaa"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="b4cb454b-a2be-42f7-adaf-68fb7adc208e"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="efd55d1e-95e4-46f9-ba53-9b057eaaa270">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="f17bc387-9105-40c0-8b64-1b4087b58bc6"/>
+    <valueIndices>188</valueIndices>
+    <valueIndices>188</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="f17bc387-9105-40c0-8b64-1b4087b58bc6">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="f1811a4f-4cc5-4a61-86a8-405cc42e2423"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="efd55d1e-95e4-46f9-ba53-9b057eaaa270"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="2017de8f-6d0a-4f6e-8de6-b3d10e9150cd">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="f0cbb91b-dc26-4412-b07c-6b06a4226338"/>
+    <valueIndices>187</valueIndices>
+    <valueIndices>187</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="f0cbb91b-dc26-4412-b07c-6b06a4226338">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="166cf5c9-78f1-4134-9a02-51ecb657eee7"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="2017de8f-6d0a-4f6e-8de6-b3d10e9150cd"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="3331cbd8-3181-4bf4-a7ce-5885af3ae9c9">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="d1647683-e05d-4508-98c7-060da079ccee"/>
+    <valueIndices>185</valueIndices>
+    <valueIndices>185</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="252b8179-0975-4b9b-8cae-fbcb22d6005b">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/Park Transform/Gain1</blockPath>
+    <name>Gain</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="d1647683-e05d-4508-98c7-060da079ccee"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="d1647683-e05d-4508-98c7-060da079ccee">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="252b8179-0975-4b9b-8cae-fbcb22d6005b"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="3331cbd8-3181-4bf4-a7ce-5885af3ae9c9"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="bcd4df02-46b9-4574-aa9b-024a9d2e2251">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="40db764d-c2c7-424a-849d-e057e5f6f26d"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="6f13db8d-3818-4162-b0a5-0e23f0d2b927"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="0e76bc65-fd5a-47c9-b2c3-dd58e28223ba">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="53d293ea-c3fb-4750-9059-e82ebcb58702"/>
+    <valueIndices>179</valueIndices>
+    <valueIndices>179</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="dd461f10-24f5-4f0f-9584-3e95a576f90e">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/Velocity Controller</blockPath>
+    <name>Kp_w</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="ca6cf60e-aa0f-4de2-934f-d18bb121decb"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="7fc128c3-8ed5-48e9-9543-da859c7d2227">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="6c3af807-8569-48da-9e8b-88196a26f247"/>
+    <valueIndices>178</valueIndices>
+    <valueIndices>178</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="052db8d4-d1ac-4686-a715-bee2cfef22f1">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="2ec92279-fcfe-48b3-a737-3beff97966b1"/>
+    <valueIndices>215</valueIndices>
+    <valueIndices>215</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="f1763151-c775-468e-9413-51003d1b9c73">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/PMSM Current Reference Generator/Constant</blockPath>
+    <name>Value</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="325b8e26-d398-4416-9ac5-48911e054b58"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="34e92cda-4c37-424b-8b5d-9a3551338eab">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="1fd3e004-7a90-4886-8f6c-88f68e143d51"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="15d38cda-655d-40e0-a620-02864fabb9b1"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="7bde6d95-2d8b-4349-83ee-11e43b6db685">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/Velocity Controller/Zero-cancellation  omega</blockPath>
+    <name>Numerator</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="b3bfddbe-5290-41f9-8aa1-af248b05558f"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="325b8e26-d398-4416-9ac5-48911e054b58">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="f1763151-c775-468e-9413-51003d1b9c73"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="00cb3270-ada3-4926-b739-e53229965ec0"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="6c3af807-8569-48da-9e8b-88196a26f247">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="5f4113ee-818b-40cc-b992-6f61a242c5a0"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="7fc128c3-8ed5-48e9-9543-da859c7d2227"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="b5a84a0a-dacd-425e-8879-656f542dbd3e">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="556adbee-cd72-4d7c-887d-6d5dac8f2c81"/>
+    <valueIndices>171</valueIndices>
+    <valueIndices>171</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="0f56458a-721f-4af3-bf51-5c0324cd275a">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="737ef134-6a7e-4673-914f-9e0b9c4d4428"/>
+    <valueIndices>196</valueIndices>
+    <valueIndices>196</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="9fe23d8f-9499-4374-a2c4-d59d3ba50584">
+    <parameter type="slsa.mm.param.rtp.SFunctionParameter" uuid="bd54f68c-d949-4c2e-921d-2ff73d528722"/>
+    <valueIndices>87</valueIndices>
+    <valueIndices>87</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="9c2b6297-048e-4588-9022-bb11218356f3">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control/Zero-cancellation id</blockPath>
+    <name>Numerator</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="cd13c8a7-d0f3-4dea-a613-66f9dff1dece"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="ee2091fb-9965-4d32-8419-ac252ff19d56">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/Velocity Controller/Discrete PI Controller/Integrator (Discrete or Continuous)/Discrete/Saturation</blockPath>
+    <name>LowerLimit</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="556adbee-cd72-4d7c-887d-6d5dac8f2c81"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="556adbee-cd72-4d7c-887d-6d5dac8f2c81">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="ee2091fb-9965-4d32-8419-ac252ff19d56"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="b5a84a0a-dacd-425e-8879-656f542dbd3e"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="c17f4c94-9a9a-407d-ad99-4b69fab253c5">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/Velocity Controller/Discrete PI Controller/Integrator (Discrete or Continuous)/Discrete/Saturation</blockPath>
+    <name>UpperLimit</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="731cd859-f66e-4048-b59b-7baf77aaa67b"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="1fd3e004-7a90-4886-8f6c-88f68e143d51">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control/PI iq/Integrator (Discrete or Continuous)/Discrete/Saturation</blockPath>
+    <name>UpperLimit</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="34e92cda-4c37-424b-8b5d-9a3551338eab"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="08b68910-9911-420c-96e4-0cf8c077fbb9">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="0b261f24-2804-4b03-9885-4269c2cd5575"/>
+    <valueIndices>176</valueIndices>
+    <valueIndices>176</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="731cd859-f66e-4048-b59b-7baf77aaa67b">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="c17f4c94-9a9a-407d-ad99-4b69fab253c5"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="86f2baaa-d86a-4e0e-a92f-20483e3855ee"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="335b3327-0ff6-47a9-9de7-93b1b0809cca">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control</blockPath>
+    <name>LqMatrix</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="119661ce-6faa-4c26-bb16-bd276f5e0089"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="fd44b7a0-cd37-4db2-b416-7aa7a880cce7">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="ba9b23c4-eb37-4bb8-962e-bfbc9bc66ede"/>
+    <valueIndices>29</valueIndices>
+    <valueIndices>30</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="9fd65ba1-34e9-4183-addb-d6651b114201">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="2358853b-0a62-499e-9442-e0ecebbe8357"/>
+    <valueIndices>168</valueIndices>
+    <valueIndices>168</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="b3bfa629-0e6f-4d8f-884b-ac53fbbc2f0c">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/Velocity Controller/Discrete PI Controller/Integrator (Discrete or Continuous)/Discrete/Integrator</blockPath>
+    <name>UpperSaturationLimit</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="2358853b-0a62-499e-9442-e0ecebbe8357"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="2358853b-0a62-499e-9442-e0ecebbe8357">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="b3bfa629-0e6f-4d8f-884b-ac53fbbc2f0c"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="9fd65ba1-34e9-4183-addb-d6651b114201"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="f1811a4f-4cc5-4a61-86a8-405cc42e2423">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control/PI id/Integrator (Discrete or Continuous)/Discrete/Integrator</blockPath>
+    <name>LowerSaturationLimit</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="f17bc387-9105-40c0-8b64-1b4087b58bc6"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="e9d0e6cb-d1be-4f8c-81b4-58eb4133b86d">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="b3bfddbe-5290-41f9-8aa1-af248b05558f"/>
+    <valueIndices>162</valueIndices>
+    <valueIndices>162</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="de927be5-4943-400c-8efc-4aa36b5b7f6b">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="8bb6b01e-08cb-4d9f-a4e9-63cf7b0694dc"/>
+    <valueIndices>61</valueIndices>
+    <valueIndices>63</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="f9829484-bcab-41b9-a3a9-bef9079b0fc6">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="9155bb59-21f1-4fcc-a32a-d80458db9ea0"/>
+    <valueIndices>157</valueIndices>
+    <valueIndices>157</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="5b4079bc-d018-423c-8409-0656b32c455d">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/Bias</blockPath>
+    <name>Bias</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="9155bb59-21f1-4fcc-a32a-d80458db9ea0"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="9155bb59-21f1-4fcc-a32a-d80458db9ea0">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="5b4079bc-d018-423c-8409-0656b32c455d"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="f9829484-bcab-41b9-a3a9-bef9079b0fc6"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="2ec92279-fcfe-48b3-a737-3beff97966b1">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="2c8b5558-3856-4ef7-a337-703948770483"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="052db8d4-d1ac-4686-a715-bee2cfef22f1"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="ea4bc239-3ece-4de9-b7f6-de47d584a121">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="0043fa90-d592-4f00-92c8-d91a75e2be6e"/>
+    <valueIndices>169</valueIndices>
+    <valueIndices>169</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="6c46011d-07ce-4c44-ae96-bce118aa1b6f">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/PWM/PWM Generator (Three-phase, Two-level)/Switching Time Calculation</blockPath>
+    <name>PWM</name>
+    <parameter type="slsa.mm.param.rtp.SFunctionParameter" uuid="bd54f68c-d949-4c2e-921d-2ff73d528722"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="43656744-eed1-4541-af89-f88aa33d40db">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="8f5c268d-d4d8-4fb8-acdb-bfbdbe3a64a0"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="41c4cf2c-8515-46f7-9c93-180a2d0c0cd7"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="cd13c8a7-d0f3-4dea-a613-66f9dff1dece">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="9c2b6297-048e-4588-9022-bb11218356f3"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="4f176f35-cf3b-438f-9be9-9af5087c197e"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="0876b18b-f636-4d27-a8ba-4d5b95fb8955">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="f8825b81-43be-451c-8205-5fae551580be"/>
+    <valueIndices>136</valueIndices>
+    <valueIndices>136</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="aa411639-53ef-4907-8504-20887a3301d4">
+    <parameter type="slsa.mm.param.rtp.SFunctionParameter" uuid="5eb0e285-a848-48a5-a0fb-d39b354f0164"/>
+    <valueIndices>88</valueIndices>
+    <valueIndices>88</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="1c113af1-f9d7-4e12-b589-d59977be585b">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control/PI iq/Integrator (Discrete or Continuous)/Discrete/Integrator</blockPath>
+    <name>UpperSaturationLimit</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="747b11d1-1774-4251-b6f0-3ff33e2bdd12"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="166cf5c9-78f1-4134-9a02-51ecb657eee7">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control/PI id/Integrator (Discrete or Continuous)/Discrete/Integrator</blockPath>
+    <name>UpperSaturationLimit</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="f0cbb91b-dc26-4412-b07c-6b06a4226338"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.SFunctionParameter type="slsa.mm.param.rtp.SFunctionParameter" uuid="5eb0e285-a848-48a5-a0fb-d39b354f0164">
+    <isInlined>true</isInlined>
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="9ad1fcfa-40c1-4152-8b1f-d5e43e1f0118"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="aa411639-53ef-4907-8504-20887a3301d4"/>
+  </slsa.mm.param.rtp.SFunctionParameter>
+  <slsa.mm.param.rtp.SFunctionParameter type="slsa.mm.param.rtp.SFunctionParameter" uuid="bd54f68c-d949-4c2e-921d-2ff73d528722">
+    <isInlined>true</isInlined>
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="6c46011d-07ce-4c44-ae96-bce118aa1b6f"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="9fe23d8f-9499-4374-a2c4-d59d3ba50584"/>
+  </slsa.mm.param.rtp.SFunctionParameter>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="5f4113ee-818b-40cc-b992-6f61a242c5a0">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control/Zero-cancellation iq</blockPath>
+    <name>Numerator</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="6c3af807-8569-48da-9e8b-88196a26f247"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="caa9550f-42a7-4763-bef5-9ea6b665f231">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="fa3ddd63-763c-4b17-92c1-078c98241ca5"/>
+    <valueIndices>83</valueIndices>
+    <valueIndices>84</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="0034cf6a-561f-49d2-814d-9824feb13497">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/PMSM Current Reference Generator/Lookup Table iq reference</blockPath>
+    <name>BreakpointsForDimension1</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="e58e0141-6a60-4636-9fae-5d383ce8ab10"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="48552cea-df9e-47c4-9f00-f3588f4f1fa4">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/PMSM Current Reference Generator/Lookup Table iq reference</blockPath>
+    <name>BreakpointsForDimension3</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="fa3ddd63-763c-4b17-92c1-078c98241ca5"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="146d14e3-00ab-4047-a97f-447e5e782d50">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/Velocity Controller/Zero-cancellation  omega</blockPath>
+    <name>Denominator</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="5baf98c7-0620-487c-9a88-975ab61003c7"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="bb03c73e-b154-41f8-b2bd-35e2429a3f1a">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="503d6774-d791-44b8-b2a7-77c72d6ceaf8"/>
+    <valueIndices>194</valueIndices>
+    <valueIndices>194</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="503d6774-d791-44b8-b2a7-77c72d6ceaf8">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="a4922d82-ce5a-4f23-84b0-fc2653fc24ea"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="bb03c73e-b154-41f8-b2bd-35e2429a3f1a"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="3fb9565c-53da-4919-b7d0-5158a8716f94">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/PMSM Current Reference Generator/Lookup Table iq reference</blockPath>
+    <name>Table</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="fb5b33d5-1560-401d-a143-aab9c919f6de"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="e684b46e-3ed4-4a61-963f-787f20d9f774">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="e58e0141-6a60-4636-9fae-5d383ce8ab10"/>
+    <valueIndices>78</valueIndices>
+    <valueIndices>79</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="e58e0141-6a60-4636-9fae-5d383ce8ab10">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="0034cf6a-561f-49d2-814d-9824feb13497"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="e684b46e-3ed4-4a61-963f-787f20d9f774"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="fa3ddd63-763c-4b17-92c1-078c98241ca5">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="48552cea-df9e-47c4-9f00-f3588f4f1fa4"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="caa9550f-42a7-4763-bef5-9ea6b665f231"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="00c15dfb-e64e-4f34-b412-640f02bf583d">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="db6aec49-5f61-48f9-b791-f90bb15bd3b3"/>
+    <valueIndices>80</valueIndices>
+    <valueIndices>82</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="747b11d1-1774-4251-b6f0-3ff33e2bdd12">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="1c113af1-f9d7-4e12-b589-d59977be585b"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="17cabfaf-dada-40a9-8340-e4bb078419d5"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="0043fa90-d592-4f00-92c8-d91a75e2be6e">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="f684ffa8-2e63-4a60-a8d1-5f4f0862dec7"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="ea4bc239-3ece-4de9-b7f6-de47d584a121"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="e67bd973-1a92-4c38-8164-b2055c570307">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="fb5b33d5-1560-401d-a143-aab9c919f6de"/>
+    <valueIndices>66</valueIndices>
+    <valueIndices>77</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.ModelMetadata type="slsa.mm.param.rtp.ModelMetadata" uuid="6c8b8ba3-b575-494e-8c4a-4a2879786291">
+    <modelName>Tractive_System_model</modelName>
+  </slsa.mm.param.rtp.ModelMetadata>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="fb5b33d5-1560-401d-a143-aab9c919f6de">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="3fb9565c-53da-4919-b7d0-5158a8716f94"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="e67bd973-1a92-4c38-8164-b2055c570307"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="5baf98c7-0620-487c-9a88-975ab61003c7">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="146d14e3-00ab-4047-a97f-447e5e782d50"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="2c40635c-f6a0-4a83-8005-b412d63181b4"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="a4922d82-ce5a-4f23-84b0-fc2653fc24ea">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control/PI iq/Integrator (Discrete or Continuous)/Discrete/Integrator</blockPath>
+    <name>LowerSaturationLimit</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="503d6774-d791-44b8-b2a7-77c72d6ceaf8"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="90e4ece7-06a4-4951-8417-1933c34f15dc">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="8828eb5d-94b0-4c0b-bc8a-70d617af2614"/>
+    <valueIndices>14</valueIndices>
+    <valueIndices>17</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="bef7e2a2-edf8-4b6a-8ade-1bb777a7a381">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/PMSM Current Reference Generator/Lookup Table id reference</blockPath>
+    <name>BreakpointsForDimension3</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="869e1e5d-6a35-4dcb-93ee-7c1b08e8aa1c"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="c31c8152-0a04-4dba-be52-9c361006711e">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="1f3375a2-7086-48e6-8e69-4949ec878d58"/>
+    <valueIndices>10</valueIndices>
+    <valueIndices>10</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="0b261f24-2804-4b03-9885-4269c2cd5575">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="efec2120-cb48-48ae-b457-ec5976000ee9"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="08b68910-9911-420c-96e4-0cf8c077fbb9"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="869e1e5d-6a35-4dcb-93ee-7c1b08e8aa1c">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="bef7e2a2-edf8-4b6a-8ade-1bb777a7a381"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="f1cc8389-516a-4d26-8f9e-69ebf3747bc9"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="41a97093-3a33-43f0-83ec-380708e47fe6">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="1d139641-e9a4-4057-ad1e-2a09f6cf9a26"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="421489cd-4cd7-4169-9db4-a527bf0f9ed0"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="1ec22380-7926-4694-b973-1c32076727ae">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control</blockPath>
+    <name>psimMatrix</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="5a0edb15-379e-427b-8655-2c5b628434a0"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="a8368047-a78f-4666-a25c-ad3de1a7a57c">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/PMSM Current Reference Generator/Lookup Table iq reference</blockPath>
+    <name>BreakpointsForDimension2</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="db6aec49-5f61-48f9-b791-f90bb15bd3b3"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="2c40635c-f6a0-4a83-8005-b412d63181b4">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="5baf98c7-0620-487c-9a88-975ab61003c7"/>
+    <valueIndices>163</valueIndices>
+    <valueIndices>163</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="735c1e77-7806-4bfe-a97a-a3ee4c3b7c4c">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="29c54449-7b56-4d06-b3d5-7ec8ae5b2dd8"/>
+    <valueIndices>31</valueIndices>
+    <valueIndices>32</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="29c54449-7b56-4d06-b3d5-7ec8ae5b2dd8">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="27a05054-7432-4cfe-a7d1-6756a825a624"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="735c1e77-7806-4bfe-a97a-a3ee4c3b7c4c"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="6f13db8d-3818-4162-b0a5-0e23f0d2b927">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="bcd4df02-46b9-4574-aa9b-024a9d2e2251"/>
+    <valueIndices>7</valueIndices>
+    <valueIndices>7</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="fdee6173-5d32-4911-a58b-d6492fd3d404">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="e87b439d-5523-4cde-ab62-9b1a4064ee91"/>
+    <valueIndices>47</valueIndices>
+    <valueIndices>58</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="f2c58433-46df-4176-96ad-f854b2705bd9">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/PMSM Current Reference Generator/Lookup Table id reference</blockPath>
+    <name>Table</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="e87b439d-5523-4cde-ab62-9b1a4064ee91"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="b3bfddbe-5290-41f9-8aa1-af248b05558f">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="7bde6d95-2d8b-4349-83ee-11e43b6db685"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="e9d0e6cb-d1be-4f8c-81b4-58eb4133b86d"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="00cb3270-ada3-4926-b739-e53229965ec0">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="325b8e26-d398-4416-9ac5-48911e054b58"/>
+    <valueIndices>173</valueIndices>
+    <valueIndices>173</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="f684ffa8-2e63-4a60-a8d1-5f4f0862dec7">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/Velocity Controller/Discrete PI Controller/Integrator (Discrete or Continuous)/Discrete/Integrator</blockPath>
+    <name>LowerSaturationLimit</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="0043fa90-d592-4f00-92c8-d91a75e2be6e"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="09c1a66e-0cde-439e-acfe-d7b286d4372d">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control</blockPath>
+    <name>LdMatrix</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="8828eb5d-94b0-4c0b-bc8a-70d617af2614"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="977e9c68-6569-4ad9-a83a-9b7015a67d0b">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="5a0edb15-379e-427b-8655-2c5b628434a0"/>
+    <valueIndices>35</valueIndices>
+    <valueIndices>38</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="22b367fd-00ba-4aad-8882-1e43c0e2a2c0">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/PMSM Current Reference Generator/Lookup Table id reference</blockPath>
+    <name>BreakpointsForDimension2</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="8bb6b01e-08cb-4d9f-a4e9-63cf7b0694dc"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="8f5c268d-d4d8-4fb8-acdb-bfbdbe3a64a0">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/Velocity Controller/Kv_w</blockPath>
+    <name>Gain</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="43656744-eed1-4541-af89-f88aa33d40db"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="15d38cda-655d-40e0-a620-02864fabb9b1">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="34e92cda-4c37-424b-8b5d-9a3551338eab"/>
+    <valueIndices>195</valueIndices>
+    <valueIndices>195</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="8448ee66-31fb-4a67-ba95-17319b5f1a4c">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control</blockPath>
+    <name>idVect</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="ba9b23c4-eb37-4bb8-962e-bfbc9bc66ede"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="4f176f35-cf3b-438f-9be9-9af5087c197e">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="cd13c8a7-d0f3-4dea-a613-66f9dff1dece"/>
+    <valueIndices>175</valueIndices>
+    <valueIndices>175</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="40db764d-c2c7-424a-849d-e057e5f6f26d">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/Velocity Controller</blockPath>
+    <name>Kaw_w</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="bcd4df02-46b9-4574-aa9b-024a9d2e2251"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="fd34c081-b40c-4578-af26-346cb1be7a79">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="119661ce-6faa-4c26-bb16-bd276f5e0089"/>
+    <valueIndices>18</valueIndices>
+    <valueIndices>21</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="119661ce-6faa-4c26-bb16-bd276f5e0089">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="335b3327-0ff6-47a9-9de7-93b1b0809cca"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="fd34c081-b40c-4578-af26-346cb1be7a79"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="9ad1fcfa-40c1-4152-8b1f-d5e43e1f0118">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/PWM/PWM Generator (Three-phase, Two-level)/Switching Time Calculation</blockPath>
+    <name>fsw</name>
+    <parameter type="slsa.mm.param.rtp.SFunctionParameter" uuid="5eb0e285-a848-48a5-a0fb-d39b354f0164"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="86f2baaa-d86a-4e0e-a92f-20483e3855ee">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="731cd859-f66e-4048-b59b-7baf77aaa67b"/>
+    <valueIndices>170</valueIndices>
+    <valueIndices>170</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="1d139641-e9a4-4057-ad1e-2a09f6cf9a26">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/PMSM Current Reference Generator/Lookup Table id reference</blockPath>
+    <name>BreakpointsForDimension1</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="41a97093-3a33-43f0-83ec-380708e47fe6"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="13858989-c131-4784-9f1a-b5341d0b01af">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Outer loop control/Velocity Controller</blockPath>
+    <name>Ki_w</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="1f3375a2-7086-48e6-8e69-4949ec878d58"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="b7d5c3f3-021c-4e7a-8820-f9ea285a332d">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control/Zero-cancellation iq</blockPath>
+    <name>Denominator</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="53d293ea-c3fb-4750-9059-e82ebcb58702"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="41c4cf2c-8515-46f7-9c93-180a2d0c0cd7">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="43656744-eed1-4541-af89-f88aa33d40db"/>
+    <valueIndices>86</valueIndices>
+    <valueIndices>86</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="a23cfa31-39ad-434e-abff-097c5bd201fd">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="ca6cf60e-aa0f-4de2-934f-d18bb121decb"/>
+    <valueIndices>13</valueIndices>
+    <valueIndices>13</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="f8825b81-43be-451c-8205-5fae551580be">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="8dfbc1a6-e05c-48f6-a4f0-17e1c271fa76"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="0876b18b-f636-4d27-a8ba-4d5b95fb8955"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="db6aec49-5f61-48f9-b791-f90bb15bd3b3">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="a8368047-a78f-4666-a25c-ad3de1a7a57c"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="00c15dfb-e64e-4f34-b412-640f02bf583d"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="8828eb5d-94b0-4c0b-bc8a-70d617af2614">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="09c1a66e-0cde-439e-acfe-d7b286d4372d"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="90e4ece7-06a4-4951-8417-1933c34f15dc"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="53d293ea-c3fb-4750-9059-e82ebcb58702">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="b7d5c3f3-021c-4e7a-8820-f9ea285a332d"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="0e76bc65-fd5a-47c9-b2c3-dd58e28223ba"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="947ada11-4286-4a12-b58b-52c343a8e45d">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="4f6eac48-e37b-44e4-b961-66e320099d42"/>
+    <valueIndices>190</valueIndices>
+    <valueIndices>190</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="8dfbc1a6-e05c-48f6-a4f0-17e1c271fa76">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/PWM/PWM Generator (Three-phase, Two-level)/Gate Signal Generator/Initial</blockPath>
+    <name>Value</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="f8825b81-43be-451c-8205-5fae551580be"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="f1cc8389-516a-4d26-8f9e-69ebf3747bc9">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="869e1e5d-6a35-4dcb-93ee-7c1b08e8aa1c"/>
+    <valueIndices>64</valueIndices>
+    <valueIndices>65</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="8bb6b01e-08cb-4d9f-a4e9-63cf7b0694dc">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="22b367fd-00ba-4aad-8882-1e43c0e2a2c0"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="de927be5-4943-400c-8efc-4aa36b5b7f6b"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.RtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="421489cd-4cd7-4169-9db4-a527bf0f9ed0">
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="41a97093-3a33-43f0-83ec-380708e47fe6"/>
+    <valueIndices>59</valueIndices>
+    <valueIndices>60</valueIndices>
+  </slsa.mm.param.rtp.RtpLocation>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="ba9b23c4-eb37-4bb8-962e-bfbc9bc66ede">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="8448ee66-31fb-4a67-ba95-17319b5f1a4c"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="fd44b7a0-cd37-4db2-b416-7aa7a880cce7"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="e87b439d-5523-4cde-ab62-9b1a4064ee91">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="f2c58433-46df-4176-96ad-f854b2705bd9"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="fdee6173-5d32-4911-a58b-d6492fd3d404"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="ca6cf60e-aa0f-4de2-934f-d18bb121decb">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="dd461f10-24f5-4f0f-9584-3e95a576f90e"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="a23cfa31-39ad-434e-abff-097c5bd201fd"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="531b19dd-6165-4c59-9b26-a9c062e1bcaa">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control/PI id/Integrator (Discrete or Continuous)/Discrete/Saturation</blockPath>
+    <name>UpperLimit</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="e6e3bb72-1751-4a65-b8a7-9126c4b842e4"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="efec2120-cb48-48ae-b457-ec5976000ee9">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control/Zero-cancellation id</blockPath>
+    <name>Denominator</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="0b261f24-2804-4b03-9885-4269c2cd5575"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.BlockParameterId type="slsa.mm.param.rtp.BlockParameterId" uuid="27a05054-7432-4cfe-a7d1-6756a825a624">
+    <blockPath>Tractive_System_model/PMSM controller1/PMSM Field-Oriented Control/Inner loop control/PMSM Current Controller with Pre-Control</blockPath>
+    <name>iqVect</name>
+    <parameter type="slsa.mm.param.rtp.Parameter" uuid="29c54449-7b56-4d06-b3d5-7ec8ae5b2dd8"/>
+  </slsa.mm.param.rtp.BlockParameterId>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="1f3375a2-7086-48e6-8e69-4949ec878d58">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="13858989-c131-4784-9f1a-b5341d0b01af"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="c31c8152-0a04-4dba-be52-9c361006711e"/>
+  </slsa.mm.param.rtp.Parameter>
+  <slsa.mm.param.rtp.Parameter type="slsa.mm.param.rtp.Parameter" uuid="5a0edb15-379e-427b-8655-2c5b628434a0">
+    <id type="slsa.mm.param.rtp.BlockParameterId" uuid="1ec22380-7926-4694-b973-1c32076727ae"/>
+    <rtpLocation type="slsa.mm.param.rtp.RtpLocation" uuid="977e9c68-6569-4ad9-a83a-9b7015a67d0b"/>
+  </slsa.mm.param.rtp.Parameter>
+</MF0>

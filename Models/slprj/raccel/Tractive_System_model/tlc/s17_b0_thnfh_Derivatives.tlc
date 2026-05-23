@@ -1,0 +1,27 @@
+%implements s17_b0_thnfh_Derivatives "C"
+
+%function Derivatives(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+XDot *_rtXdot;
+%closefile localVarDecl
+_rtXdot = %<(SLibCG_SE(SLibGetContStatesDerivativeStructPtr()))>;
+_rtXdot->ie0vm1objg = rtB.l5dzbid2tu;
+_rtXdot->jb3myghg0e = rtB.mxihbup2dp;
+_rtXdot->bbxjatyveg = rtP.u0HzLowpassFilter_A * rtX.bbxjatyveg;
+_rtXdot->bbxjatyveg += rtB.fqkkavvvvo;
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedDerivativeLocalVars", localVarDecl)>
+%endfunction
+%function DerivativesFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Derivatives(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 5, fcnProtoType)>
+%endfunction

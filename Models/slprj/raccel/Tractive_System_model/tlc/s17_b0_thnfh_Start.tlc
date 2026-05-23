@@ -1,0 +1,310 @@
+%implements s17_b0_thnfh_Start "C"
+
+%function Start(block, system) Output
+%<SLibCGIRAccessLocalDWork(75, 0)> %% oakqpinkq5
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+NeslRtpManager *manager;
+NeuDiagnosticManager *tmp;
+NeuDiagnosticTree *tmp_p;
+const Simulator *simulator;
+Simulator *tmp_e;
+o3wex1nfk3 varSizes;
+int32_T i;
+static const real_T tmp_i[559] = %<(TLC_STR_CTX(0))>;
+%closefile localVarDecl
+%assign tlcSetupRuntimeResourcesFcnOfS16B0 = OpaqueTLCBlockFcn("SetupRuntimeResources", 16, 0, 0, 0, 0)
+%assign tlcSetupRuntimeResourcesFcnOfS16B1 = OpaqueTLCBlockFcn("SetupRuntimeResources", 16, 1, 0, 0, 1)
+%assign tlcSetupRuntimeResourcesFcnOfS16B3 = OpaqueTLCBlockFcn("SetupRuntimeResources", 16, 3, 0, 0, 2)
+%assign tlcSetupRuntimeResourcesFcnOfS17B3 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 3, 0, 0, 3)
+%assign tlcSetupRuntimeResourcesFcnOfS17B4 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 4, 0, 0, 4)
+%assign tlcSetupRuntimeResourcesFcnOfS17B5 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 5, 0, 0, 5)
+%assign tlcSetupRuntimeResourcesFcnOfS17B7 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 7, 0, 0, 6)
+%assign tlcSetupRuntimeResourcesFcnOfS17B18 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 18, 0, 0, 7)
+%assign tlcSetupRuntimeResourcesFcnOfS17B19 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 19, 0, 0, 8)
+%assign tlcSetupRuntimeResourcesFcnOfS17B26 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 26, 0, 0, 9)
+%assign tlcSetupRuntimeResourcesFcnOfS17B29 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 29, 0, 0, 10)
+%assign tlcSetupRuntimeResourcesFcnOfS17B64 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 64, 0, 0, 11)
+%assign tlcSetupRuntimeResourcesFcnOfS17B65 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 65, 0, 0, 12)
+%assign tlcSetupRuntimeResourcesFcnOfS17B67 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 67, 0, 0, 13)
+%assign tlcSetupRuntimeResourcesFcnOfS17B68 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 68, 0, 0, 14)
+%assign tlcSetupRuntimeResourcesFcnOfS17B85 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 85, 0, 0, 15)
+%assign tlcSetupRuntimeResourcesFcnOfS17B86 = OpaqueTLCBlockFcn("SetupRuntimeResources", 17, 86, 0, 0, 16)
+%assign tlcStartFcnOfS17B29 = OpaqueTLCBlockFcn("Start", 17, 29, 0, 0, 17)
+%assign tlcStartFcnOfS17B86 = OpaqueTLCBlockFcn("Start", 17, 86, 0, 0, 18)
+%<tlcSetupRuntimeResourcesFcnOfS16B0>\
+%<tlcSetupRuntimeResourcesFcnOfS16B1>\
+%<tlcSetupRuntimeResourcesFcnOfS16B3>\
+%<tlcSetupRuntimeResourcesFcnOfS17B3>\
+%<tlcSetupRuntimeResourcesFcnOfS17B4>\
+%<tlcSetupRuntimeResourcesFcnOfS17B5>\
+%<tlcSetupRuntimeResourcesFcnOfS17B7>\
+%<tlcSetupRuntimeResourcesFcnOfS17B18>\
+%<tlcSetupRuntimeResourcesFcnOfS17B19>\
+%<tlcSetupRuntimeResourcesFcnOfS17B26>\
+%<tlcSetupRuntimeResourcesFcnOfS17B29>\
+%<tlcSetupRuntimeResourcesFcnOfS17B64>\
+%<tlcSetupRuntimeResourcesFcnOfS17B65>\
+%<tlcSetupRuntimeResourcesFcnOfS17B67>\
+%<tlcSetupRuntimeResourcesFcnOfS17B68>\
+%<tlcSetupRuntimeResourcesFcnOfS17B85>\
+%<tlcSetupRuntimeResourcesFcnOfS17B86>\
+rtB.nyp0b3xr0p = rtP.PIid_x0;
+rtB.j5tv3mr3kb = rtP.PIiq_x0;
+rtB.pad5qpr4zh = rtP.DiscretePIController_x0;
+for (oakqpinkq5 = 0; oakqpinkq5 < 1; oakqpinkq5++) {
+    rtB.nchejrqkqc[oakqpinkq5].hzltjccv1x = 0.0;
+    rtDW.nchejrqkqc[oakqpinkq5].nv30ay1f1i = 0.0;
+}
+                            {
+        char fileName[4095] = "/Users/muizz_1/Documents/E27-Tractive-system-MATLAB-model-/information for modeling/E25_Run1.xlsx";
+        CHAR16_T * fileUName = rtwExcelLoaderGetUnicodeStringFromChars(fileName);
+        CHAR16_T * sheetUName = rtwExcelLoaderGetUnicodeStringFromChars("Brake");
+        CHAR16_T * rangeUName = rtwExcelLoaderGetUnicodeStringFromChars("");
+        char spreadsheetIOImpl[4095] = "LIBXL";
+
+            const char *blockpath = "Tractive_System_model/Throttle controller/Control/Motor Torque/From Spreadsheet";
+
+
+
+        unsigned char groundValue[] = 
+{   0U, 0U, 0U, 0U, 0U, 0U, 0U, 0U } ;
+
+
+
+
+
+            if(slIsRapidAcceleratorSimulating()) {
+
+                rt_RAccelReplaceFromFilename(%<(RTMGetRootSSWrapper(17))>, blockpath, fileName);
+            }
+            {
+                void *fp = (NULL);
+                const char *errMsg = (NULL);
+                errMsg = rtwExcelLoaderCreateInstanceWithSequenceSupport(fileUName,sheetUName,rangeUName,0, 0, 0, 0, 0, groundValue, 0,0,spreadsheetIOImpl,&fp);
+                if (errMsg != (NULL)) {
+                    %<(RTMSetErrStat("errMsg"))>;
+                    return;
+                }
+                rtDW.hplkvatikf.ExcelLoader = fp;
+            }
+
+        rtwExcelLoaderFreeLabel(fileUName);
+        rtwExcelLoaderFreeLabel(sheetUName);
+        rtwExcelLoaderFreeLabel(rangeUName);
+
+    }
+
+rtDW.kmlwvwgp2f = 0;
+                            {
+        char fileName[4095] = "/Users/muizz_1/Documents/E27-Tractive-system-MATLAB-model-/information for modeling/E25_Run1.xlsx";
+        CHAR16_T * fileUName = rtwExcelLoaderGetUnicodeStringFromChars(fileName);
+        CHAR16_T * sheetUName = rtwExcelLoaderGetUnicodeStringFromChars("RPM");
+        CHAR16_T * rangeUName = rtwExcelLoaderGetUnicodeStringFromChars("");
+        char spreadsheetIOImpl[4095] = "LIBXL";
+
+            const char *blockpath = "Tractive_System_model/From Spreadsheet";
+
+
+
+        unsigned char groundValue[] = 
+{   0U, 0U, 0U, 0U, 0U, 0U, 0U, 0U } ;
+
+
+
+
+
+            if(slIsRapidAcceleratorSimulating()) {
+
+                rt_RAccelReplaceFromFilename(%<(RTMGetRootSSWrapper(17))>, blockpath, fileName);
+            }
+            {
+                void *fp = (NULL);
+                const char *errMsg = (NULL);
+                errMsg = rtwExcelLoaderCreateInstanceWithSequenceSupport(fileUName,sheetUName,rangeUName,0, 0, 0, 0, 0, groundValue, 0,0,spreadsheetIOImpl,&fp);
+                if (errMsg != (NULL)) {
+                    %<(RTMSetErrStat("errMsg"))>;
+                    return;
+                }
+                rtDW.mbfomrke5h.ExcelLoader = fp;
+            }
+
+        rtwExcelLoaderFreeLabel(fileUName);
+        rtwExcelLoaderFreeLabel(sheetUName);
+        rtwExcelLoaderFreeLabel(rangeUName);
+
+    }
+
+rtB.fepjoc1mts = rtP.Initial_Value;
+rtDW.bm1ae41pm1 = true;
+rtB.iovyg1obgo[0] = rtP.RateTransition_InitialCondition;
+rtB.mncjdu42kn[0] = rtP.RateTransition1_InitialCondition;
+rtB.iovyg1obgo[1] = rtP.RateTransition_InitialCondition;
+rtB.mncjdu42kn[1] = rtP.RateTransition1_InitialCondition;
+rtB.iovyg1obgo[2] = rtP.RateTransition_InitialCondition;
+rtB.mncjdu42kn[2] = rtP.RateTransition1_InitialCondition;
+rtB.cm1ioifn4o = rtP.RateTransition_InitialCondition_ft4rz3puja;
+simulator = Tractive_System_model_2f85d999_0_simulator_create();
+manager = partitioning_rtp_manager_create(simulator);
+rtDW.d2wi2q2xds = (void *)manager;
+rtDW.g143tgxi4a = true;
+tmp = rtw_create_diagnostics();
+rtDW.elqjayf431 = (void *)tmp;
+tmp_p = neu_diagnostic_manager_get_initial_tree((NeuDiagnosticManager *)rtDW.elqjayf431);
+rtDW.oluuhklf53 = (void *)tmp_p;
+tmp_e = Tractive_System_model_2f85d999_0_simulator_create();
+rtDW.hipi5bfdiw = (void *)tmp_e;
+                            {
+        char fileName[4095] = "/Users/muizz_1/Documents/E27-Tractive-system-MATLAB-model-/information for modeling/E25_Run1.xlsx";
+        CHAR16_T * fileUName = rtwExcelLoaderGetUnicodeStringFromChars(fileName);
+        CHAR16_T * sheetUName = rtwExcelLoaderGetUnicodeStringFromChars("Throttle");
+        CHAR16_T * rangeUName = rtwExcelLoaderGetUnicodeStringFromChars("");
+        char spreadsheetIOImpl[4095] = "LIBXL";
+
+            const char *blockpath = "Tractive_System_model/From Spreadsheet1";
+
+
+
+        unsigned char groundValue[] = 
+{   0U, 0U, 0U, 0U, 0U, 0U, 0U, 0U } ;
+
+
+
+
+
+            if(slIsRapidAcceleratorSimulating()) {
+
+                rt_RAccelReplaceFromFilename(%<(RTMGetRootSSWrapper(17))>, blockpath, fileName);
+            }
+            {
+                void *fp = (NULL);
+                const char *errMsg = (NULL);
+                errMsg = rtwExcelLoaderCreateInstanceWithSequenceSupport(fileUName,sheetUName,rangeUName,0, 0, 0, 0, 0, groundValue, 0,0,spreadsheetIOImpl,&fp);
+                if (errMsg != (NULL)) {
+                    %<(RTMSetErrStat("errMsg"))>;
+                    return;
+                }
+                rtDW.oupgqriu4e.ExcelLoader = fp;
+            }
+
+        rtwExcelLoaderFreeLabel(fileUName);
+        rtwExcelLoaderFreeLabel(sheetUName);
+        rtwExcelLoaderFreeLabel(rangeUName);
+
+    }
+
+rtDW.n0efgff5hp.NumChannels = -1;
+rtDW.n0efgff5hp.matlabCodegenIsDeleted = false;
+rtDW.falegf5xwe = true;
+rtDW.n0efgff5hp.isInitialized = 1;
+for (i = 0; i < 8; i++) {
+    varSizes.f1[i] = 1U;
+}
+rtDW.n0efgff5hp.inputVarSize = varSizes;
+if (rtDW.n0efgff5hp.NumChannels == -1) {
+    rtDW.n0efgff5hp.NumChannels = 1;
+}
+rtDW.n0efgff5hp.coder_buffer_pobj0.isInitialized = 0;
+/* System object Constructor function: dsp.FIRFilter */
+rtDW.n0efgff5hp.coder_buffer_pobj0.cSFunObject.P0_InitialStates = 0.0;
+memcpy(&rtDW.n0efgff5hp.coder_buffer_pobj0.cSFunObject.P1_Coefficients[0], &tmp_i[0], 559U * sizeof(real_T));
+rtDW.n0efgff5hp.FilterObj = &rtDW.n0efgff5hp.coder_buffer_pobj0;
+rtDW.n0efgff5hp.isSetupComplete = true;
+                            {
+        char fileName[4095] = "/Users/muizz_1/Documents/E27-Tractive-system-MATLAB-model-/information for modeling/E25_Run1.xlsx";
+        CHAR16_T * fileUName = rtwExcelLoaderGetUnicodeStringFromChars(fileName);
+        CHAR16_T * sheetUName = rtwExcelLoaderGetUnicodeStringFromChars("AC voltage");
+        CHAR16_T * rangeUName = rtwExcelLoaderGetUnicodeStringFromChars("");
+        char spreadsheetIOImpl[4095] = "LIBXL";
+
+            const char *blockpath = "Tractive_System_model/Three-phase\ninverter/From Spreadsheet";
+
+
+
+        unsigned char groundValue[] = 
+{   0U, 0U, 0U, 0U, 0U, 0U, 0U, 0U } ;
+
+
+
+
+
+            if(slIsRapidAcceleratorSimulating()) {
+
+                rt_RAccelReplaceFromFilename(%<(RTMGetRootSSWrapper(17))>, blockpath, fileName);
+            }
+            {
+                void *fp = (NULL);
+                const char *errMsg = (NULL);
+                errMsg = rtwExcelLoaderCreateInstanceWithSequenceSupport(fileUName,sheetUName,rangeUName,0, 0, 0, 0, 0, groundValue, 0,0,spreadsheetIOImpl,&fp);
+                if (errMsg != (NULL)) {
+                    %<(RTMSetErrStat("errMsg"))>;
+                    return;
+                }
+                rtDW.mqxteia35p.ExcelLoader = fp;
+            }
+
+        rtwExcelLoaderFreeLabel(fileUName);
+        rtwExcelLoaderFreeLabel(sheetUName);
+        rtwExcelLoaderFreeLabel(rangeUName);
+
+    }
+
+%<tlcStartFcnOfS17B29>\
+rtB.h5hkoq0fxb[0] = rtP.RT3_InitialCondition;
+rtB.h5hkoq0fxb[1] = rtP.RT3_InitialCondition;
+rtB.h5hkoq0fxb[2] = rtP.RT3_InitialCondition;
+                            {
+        char fileName[4095] = "/Users/muizz_1/Documents/E27-Tractive-system-MATLAB-model-/information for modeling/E25_Run1.xlsx";
+        CHAR16_T * fileUName = rtwExcelLoaderGetUnicodeStringFromChars(fileName);
+        CHAR16_T * sheetUName = rtwExcelLoaderGetUnicodeStringFromChars("AC current");
+        CHAR16_T * rangeUName = rtwExcelLoaderGetUnicodeStringFromChars("");
+        char spreadsheetIOImpl[4095] = "LIBXL";
+
+            const char *blockpath = "Tractive_System_model/From Spreadsheet2";
+
+
+
+        unsigned char groundValue[] = 
+{   0U, 0U, 0U, 0U, 0U, 0U, 0U, 0U } ;
+
+
+
+
+
+            if(slIsRapidAcceleratorSimulating()) {
+
+                rt_RAccelReplaceFromFilename(%<(RTMGetRootSSWrapper(17))>, blockpath, fileName);
+            }
+            {
+                void *fp = (NULL);
+                const char *errMsg = (NULL);
+                errMsg = rtwExcelLoaderCreateInstanceWithSequenceSupport(fileUName,sheetUName,rangeUName,0, 0, 0, 0, 0, groundValue, 0,0,spreadsheetIOImpl,&fp);
+                if (errMsg != (NULL)) {
+                    %<(RTMSetErrStat("errMsg"))>;
+                    return;
+                }
+                rtDW.mbhkchhdjz.ExcelLoader = fp;
+            }
+
+        rtwExcelLoaderFreeLabel(fileUName);
+        rtwExcelLoaderFreeLabel(sheetUName);
+        rtwExcelLoaderFreeLabel(rangeUName);
+
+    }
+
+%<tlcStartFcnOfS17B86>\
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedStartLocalVars", localVarDecl)>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 0, fcnProtoType)>
+%endfunction
